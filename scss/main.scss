@@ -32,7 +32,7 @@ html,body
     overflow-x: hidden; 
 }
 
-.header {
+/*.header {*/
 
     .header__nav {
         background-color: $primary-color;
@@ -46,7 +46,6 @@ html,body
         padding-top: 5%;
         
     }
-
     .header__nav-list {
         display: flex;
         justify-content: center;
@@ -111,10 +110,10 @@ html,body
     .nav__list-item .nav__link {
         text-decoration: none;
     }
-}
 
 .hero {
     position: relative;
+}
 
     .hero__header {
         position: absolute;
@@ -127,9 +126,6 @@ html,body
         font-weight: bold;
         font-style: normal;
     }
-}
-
-.about {
 
     .about__header {
         color: $primary-color;
@@ -179,9 +175,6 @@ html,body
         margin: 3vh 5vw 3vh 5vw;
         line-height: 3vh;
     }
-}
-
-.gallery {
 
     .gallery__header {
         color: $primary-color;
@@ -198,12 +191,11 @@ html,body
         margin-left: 5vw;
         margin-right: 5vw;
     }
-}
     .footer {
         background-color: $primary-color;
         height: 130%;
         margin-top: 20%;
-
+    }
     .footer__header {
         font-size: 40px;
         color: $font-color;
@@ -253,5 +245,128 @@ html,body
         padding-top: 4vh;
         line-height: 3.5vh;
 
+    }
+
+@media only screen and (min-width: 768px) {
+
+    .header__nav-logo {
+        display: flex;
+        margin-left: 4%;
+        padding-top: 4%;
+        
+    }
+
+    .header__nav-list {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .nav__list-item {
+        display: flex;
+        border-bottom: none;
+        padding-bottom: 0;
+        width: 20%;
+        margin-top: -2%;
+        
+    }
+
+    .nav__link {
+        display: flex;
+        padding: 0;
+        font-family: 'Avenir';
+        font-size: 14px;
+        color: #E1E1E1;
+    
+    }
+    
+    .hero__overlay:after {
+        height: 54vh;
+    }
+    
+    .hero__image {
+        height: 54vh;
+    }
+    
+    .hero__header {
+        position: absolute;
+        top: 15%;
+        left: 4%;
+        font-size: 60px;
+        line-height: 12.5vh;
+        color: $font-color;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .about__header {
+        font-size: 40px;
+        margin: 6vh 5vw 5vh 5vw;
+}
+
+    .about__image {
+        width: 112vh;
+}
+
+    .about__quote-text {
+    font-size: 25px;
+    line-height: 5vh;
+    margin: 6vh 5vw 3vh 5vw;
+}
+    .about__quote-author {
+    font-size: 20px;
+    margin: 5.5vh 5vw 6vh 5vw;
+}
+
+    .about__autobiography-names {
+    font-size: 25px;
+    margin: 7vh 5vw 3vh 5vw;
+}
+
+    .about__box {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*.about__paragraph-box {
+    }*/
+
+    .about__paragraph-first, 
+    .about__paragraph-second {
+    display: flex;
+    font-size: 14.2px;
+    /*margin: 3vh 5vw 3vh 5vw;*/
+    line-height: 4vh;
+}
+
+    .gallery__header {
+    font-size: 35px;
+    margin-bottom: 8vh;
+}
+
+    .gallery__layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .gallery__image {
+        display: flex;
+        width: 35vh;
+        margin-bottom: 3vh;
+        margin: 0 auto;
+        margin-bottom: 4vh;
+    }
+
+    .footer {
+        height: 130%;
+        margin-top: 4%;
     }
 }
