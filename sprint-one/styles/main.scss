@@ -574,23 +574,24 @@ html,body
     .gallery__header {
         margin-left: 12.5vw;
         font-size: 30px;
-        margin-bottom: 5.5vh;
+        margin-bottom: 6vh;
         margin-top: 6vh;
     }
 
     .gallery__layout {
         margin-left: 11.5vw;
         margin-right: 11.5vw;
+        margin-top: 3vh;
     }
 
     .gallery__image {
         width: 24vw;
-        margin-bottom: 6vh;
+        margin-bottom: 4vh;
     }
 
     .footer {
         height: 56%;
-        margin-top: 0;
+        margin-top: 2vh;
     }
     .footer__header {
         margin-left: 12.5vw;
@@ -725,6 +726,10 @@ html,body
             margin-left: 16.5vw;
             margin-right: 16.5vw;
         }
+
+        .gallery__image {
+            margin-bottom: 4vh;
+        }
     
         .gallery__header {
             margin-left: 12.5vw;
@@ -732,6 +737,7 @@ html,body
 
         .footer {
             height: 57%;
+            margin-top: 2vh;
         }
     
         .footer__social {
@@ -804,7 +810,7 @@ html,body
         .nav__link:hover {
             color: $font-color;
             border-bottom: 5px solid $font-color;
-            padding-bottom: 3vh;
+            padding-bottom: 3.5vh;
             width: 63%;
         }
 
@@ -842,6 +848,10 @@ html,body
         .gallery__layout {
             margin-left: 11.8vw;
         }
+
+        .gallery__image {
+            margin-bottom: 4vh;
+        }
         
         .footer__social {
             margin-left: 35vw;
@@ -850,6 +860,7 @@ html,body
         }
         .footer {
             height: 57%;
+            margin-top: 2vh;
         }
         .footer__image {
             margin-left: -2.5vw;
