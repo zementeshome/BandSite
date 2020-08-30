@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome-1">
-    <meta name="HandheldFriendly" content="true"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome-1">
+    <meta name="HandheldFriendly" content="true">
     <title>BandSite Sprint 1</title>
      <!-- link to stylesheet -->
-     <link rel="stylesheet" href="./scss/main.css">
+     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body> 
     <!-- header -->
     <header class="header">
          <!-- nav -->
         <nav class="header__nav">
-            <a href="main.html">
-                <img src="assets/Logo/Logo-bandsite.svg" alt="bandsite logo all caps" class="header__nav-logo">
+            <a href="index.html">
+                <img src="assets/logos/Logo-bandsite.svg" alt="bandsite logo all caps" class="header__nav-logo">
             </a>
             <ul class="header__nav-list">
                 <li class="nav__list-item nav__list-item--active"><a href="" class="nav__link">Biography</a></li>
@@ -25,7 +25,7 @@
          <!-- hero -->
          <div class="hero">
               <div class="hero__overlay">
-                    <img src="assets/Images/hero.jpg" alt="blue and pink art background" class="hero__image"></div>
+                    <img src="assets/images/hero.jpg" alt="blue and pink art background" class="hero__image"></div>
               <div class="hero__text">
                 <h1 class="hero__header">Gaspard Auge &<br> Xavier de Rosnay</h1>
              </div>
@@ -35,7 +35,7 @@
          <!-- about section -->
          <section class="about">
              <h2 class="about__header">About the Musicians</h2>
-                    <img src="assets/Images/artists.jpg" alt="two people djing" class="about__image">
+                    <img src="assets/images/artists.jpg" alt="two people djing" class="about__image">
              <div class="about__quote">
                     <h3 class="about__quote-text">“We are more comfortable with not fighting what comes naturally. Before we might have thought,‘We need to be smarter than this’“
                     </h3>
@@ -58,15 +58,15 @@
               <h2 class="gallery__header">Photo Gallery</h2>
                 <div class="gallery__column">
                      <div class="gallery__layout">
-                      <img src="assets/Images/Photo-gallery-1.jpg" alt="music festival crowd" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-2.jpg" alt="woman dancing in crowd" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-3.jpg" alt="hands up in the air" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-4.jpg" alt="woman dancing in crowd" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-5.jpg" alt="music festival crowd" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-6.jpg" alt="musician performing at festival" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-7.jpg" alt="music festival crowd" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-8.jpg" alt="close up of dj djing" class="gallery__image">
-                      <img src="assets/Images/Photo-gallery-9.jpg" alt="confetti coming down onto festival crowd" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-1.jpg" alt="music festival crowd" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-2.jpg" alt="woman dancing in crowd" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-3.jpg" alt="hands up in the air" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-4.jpg" alt="woman dancing in crowd" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-5.jpg" alt="music festival crowd" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-6.jpg" alt="musician performing at festival" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-7.jpg" alt="music festival crowd" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-8.jpg" alt="close up of dj djing" class="gallery__image">
+                      <img src="assets/images/Photo-gallery-9.jpg" alt="confetti coming down onto festival crowd" class="gallery__image">
                   </div>
               </div>
           </section>
@@ -76,28 +76,28 @@
         <div class="footer__container">
          <h2 class="footer__header">Get In Touch</h2>
                 <div class="footer__social">
-                <a href="https://www.instagram.com/"><img src="assets/Icons/SVG/Icon-instagram.svg" alt="instagram logo" class="footer__image"></a>
-                <a href="https://www.facebook.com/"><img src="assets/Icons/SVG/Icon-facebook.svg" alt="facebook logo" class="footer__image"></a>
-                <a href="https://www.twitter.com/"><img src="assets/Icons/SVG/Icon-twitter.svg" alt="twitter logo" class="footer__image"></a>
+                <a href="https://www.instagram.com/"><img src="assets/icons/SVG/Icon-instagram.svg" alt="instagram logo" class="footer__image"></a>
+                <a href="https://www.facebook.com/"><img src="assets/icons/SVG/Icon-facebook.svg" alt="facebook logo" class="footer__image"></a>
+                <a href="https://www.twitter.com/"><img src="assets/icons/SVG/Icon-twitter.svg" alt="twitter logo" class="footer__image"></a>
             </div>
                 <div class="footer__block">
-                <img src="assets/Logo/Logo-bandsite.svg" alt="bandsite logo all caps" class="footer__logo">
+                <img src="assets/logos/Logo-bandsite.svg" alt="bandsite logo all caps" class="footer__logo">
                 </div>
             </div>
         <div class="footer__contact">
             <h5 class="footer__contact-name">Richard Rovner<br>The Bees Knees Management</h5>
                 <p class="footer__contact-address">460 King Street West<br>Toronto, Ontario M5V 1L7</p>
-                 <p class="footer__contact-email">info@thebeesknee.com</p>
+                 <a href="mailto:info@thebeesknee.com" class="footer__contact-link"><p class="footer__contact-email">info@thebeesknee.com</p></a>
             </div>
         <div class="footer__contact">
             <h5 class="footer__contact-name">Marsha Vlasic<br>Artist Group International</h5>
                  <p class="footer__contact-address">Booking Agent for<br>US / South America / Japan</p>
-                <p class="footer__contact-email">marsha.vlasic@artistgrp.com</p>
+                <a href="mailto:marsha.vlasic@artistgrp.com" class="footer__contact-link"><p class="footer__contact-email">marsha.vlasic@artistgrp.com</p></a>
             </div>
         <div class="footer__contact">
             <h5 class="footer__contact-name">Russel Warby<br>William Morrir Entertainment</h5>
                 <p class="footer__contact-address">Booking Agent for<br>UK / EU / AU</p>
-                <p class="footer__contact-email">RLW@wmeentertainment.com</p> 
+                <a href="mailto:RLW@wmeentertainment.com" class="footer__contact-link"><p class="footer__contact-email">RLW@wmeentertainment.com</p></a>
             </div>
                 <p class="footer__copyright">Copyright The Bees Knees © 2018 All Rights Reserved</p>
         </footer>
