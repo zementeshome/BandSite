@@ -133,7 +133,7 @@ html, body {
 }
 
 .about__image {
-  width: 43vh;
+  width: 46.5vh;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -189,7 +189,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 43vh;
+  width: 46.5vh;
   margin-bottom: 3vh;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -215,6 +215,10 @@ html, body {
   height: 3%;
   padding-right: 5vw;
   padding-bottom: 3vh;
+}
+
+.footer__logo {
+  display: none;
 }
 
 .footer__contact-name {
@@ -249,6 +253,7 @@ html, body {
   margin-left: 5vw;
   padding-top: 4vh;
   line-height: 3.5vh;
+  width: 75%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -314,28 +319,32 @@ html, body {
   }
 
   .about__header {
-    font-size: 40px;
-    margin: 6vh 5vw 5vh 5vw;
+    font-size: 35.5px;
+    margin: 6vh 5vw 5vh 4vw;
   }
 
   .about__image {
-    width: 112vh;
+    width: 91.5vw;
+    /* change in mobile to vw*/
+    margin-left: 5vh;
   }
 
   .about__quote-text {
-    font-size: 25px;
-    line-height: 5vh;
-    margin: 6vh 5vw 3vh 5vw;
+    font-size: 23.5px;
+    font-family: "Avenir Next";
+    line-height: 6vh;
+    margin: 6vh 7vw 3vh 4vw;
   }
 
   .about__quote-author {
     font-size: 20px;
-    margin: 5.5vh 5vw 6vh 5vw;
+    margin: 5.5vh 5vw 6vh 3.5vw;
   }
 
   .about__autobiography-names {
+    font-family: "Avenir Next";
     font-size: 25px;
-    margin: 7vh 5vw 3vh 5vw;
+    margin: 7vh 5vw 3vh 3.5vw;
   }
 
   .about__box {
@@ -357,11 +366,14 @@ html, body {
     font-size: 14.2px;
     /*margin: 3vh 5vw 3vh 5vw;*/
     line-height: 4vh;
+    margin-left: 3.5vw;
+    margin-right: 2.5vw;
   }
 
   .gallery__header {
     font-size: 35px;
     margin-bottom: 8vh;
+    margin-left: 3.5vw;
   }
 
   .gallery__layout {
@@ -377,23 +389,67 @@ html, body {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
 
   .gallery__image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 35vh;
+    width: 29vw;
     margin-bottom: 3vh;
     margin: 0 auto;
     margin-bottom: 4vh;
   }
 
   .footer {
-    height: 130%;
-    margin-top: 4%;
+    height: 70%;
+    margin-top: 0;
+  }
+
+  .footer__header {
+    padding-top: 3vh;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 300px;
+    margin-left: 3.5vw;
+  }
+
+  .footer__container {
+    display: inline-block;
+  }
+
+  .footer__social {
+    margin-left: 37vw;
+    margin-top: -2rem;
+    width: 300px;
+  }
+
+  .footer__image {
+    height: 24px;
+    padding-right: 1vw;
+  }
+
+  .footer__block {
+    margin-top: -2.8rem;
+  }
+
+  .footer__logo {
+    margin-left: 80vw;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .footer__contact {
+    display: inline-block;
+    margin-top: 6vh;
+    margin-left: -1vw;
+  }
+
+  .footer__copyright {
+    visibility: visible;
+    margin-left: 3.6vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
