@@ -47,36 +47,32 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 0;
+  margin-top: 2vh;
 }
 
 .nav__list-item {
-  border-bottom: 5px solid #ffffff;
-  padding-bottom: 0;
+  padding-bottom: 2vh;
   height: 3.6vh;
   width: 100%;
 }
 
-/*.nav__list-item--active .nav__link:hover {
-    border-bottom: 5px solid $font-color;
-    padding-bottom: 0;
-    height: 3.6vh;
-    width: 50%;
-}
-
-.nav__list-item--active:active {
-    border-bottom: 5px solid $font-color;
-    padding-bottom: 0;
-    height: 3.6vh;
-    width: 50%;
-}*/
 .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 18vw 4vh 14vw;
+  padding: 0 18vw 4vh 15vw;
   font-family: "Avenir";
   font-size: 14px;
   color: #E1E1E1;
+}
+
+.nav__link:active,
+.nav__link:hover {
+  color: #ffffff;
+  border-bottom: 5px solid #ffffff;
+  padding-bottom: 1.5vh;
+  text-transform: uppercase;
+  /* i added this effect for the diving deeper section*/
 }
 
 .hero__overlay {
@@ -191,12 +187,19 @@ html, body {
   margin-bottom: 3vh;
   margin-left: 5vw;
   margin-right: 5vw;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
+
+.gallery__image:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 
 .footer {
   background-color: #323232;
-  height: 130%;
-  margin-top: 20%;
+  height: 135%;
+  margin-top: 15%;
 }
 
 .footer__header {
@@ -210,7 +213,7 @@ html, body {
 
 .footer__image {
   margin-left: 5vw;
-  height: 3%;
+  height: 28px;
   padding-right: 5vw;
   padding-bottom: 3vh;
 }
@@ -255,7 +258,7 @@ html, body {
   margin-left: 5vw;
   padding-top: 4vh;
   line-height: 3.5vh;
-  width: 75%;
+  width: 70%;
 }
 
 @media only screen and (min-width: 375px) {
@@ -263,10 +266,44 @@ html, body {
     font-size: 28px;
     line-height: 6vh;
   }
+
+  .header__nav-list {
+    margin-top: 1.5vh;
+  }
+
+  .nav__link {
+    padding: 0 10vw 4vh 17vw;
+  }
+
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 1.5vh;
+  }
+
+  .footer__copyright {
+    width: 60%;
+  }
 }
 @media only screen and (min-width: 425px) {
+  .header__nav-list {
+    margin-top: 1vh;
+  }
+
   .nav__link {
-    padding: 0 13vw 4vh 18vw;
+    padding: 0 11vw 4vh 17vw;
+  }
+
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 1.5vh;
+  }
+
+  .footer__copyright {
+    width: 55%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -311,6 +348,13 @@ html, body {
     font-family: "Avenir";
     font-size: 14px;
     color: #E1E1E1;
+  }
+
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 6.5vh;
   }
 
   .hero__overlay:after {
@@ -420,7 +464,7 @@ html, body {
 
   .footer {
     height: 70%;
-    margin-top: 0;
+    margin-top: 2%;
   }
 
   .footer__header {
@@ -429,6 +473,7 @@ html, body {
     margin-right: 0;
     width: 300px;
     margin-left: 3.5vw;
+    font-size: 38px;
   }
 
   .footer__container {
@@ -436,14 +481,14 @@ html, body {
   }
 
   .footer__social {
-    margin-left: 37vw;
+    margin-left: 40vw;
     margin-top: -2.3rem;
-    width: 300px;
+    width: 400px;
   }
 
   .footer__image {
-    height: 24px;
-    padding-right: 1vw;
+    height: 22px;
+    margin-left: 0;
   }
 
   .footer__block {
@@ -483,6 +528,7 @@ html, body {
 @media only screen and (min-width: 1024px) {
   .header__nav-logo {
     padding-top: 3%;
+    margin-left: 15vw;
   }
 
   .header__nav-list {
@@ -492,18 +538,151 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: -15vw;
+    margin-left: -5vw;
     margin-top: 1vh;
   }
 
   .nav__list-item {
-    width: 12%;
+    width: 13%;
+  }
+
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 6.5vh;
+  }
+
+  .hero__overlay:after {
+    height: 85vh;
+  }
+
+  .hero__image {
+    height: 85vh;
+    margin-top: 0;
+  }
+
+  .hero__header {
+    top: 24%;
+    left: 15%;
+    font-size: 55px;
+    line-height: 12vh;
+  }
+
+  .about__header {
+    margin-left: 12.5vw;
+    margin-bottom: 5vh;
+    font-size: 30px;
+  }
+
+  .about__image {
+    width: 63vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .about__quote-text {
+    margin-left: 20vw;
+    font-size: 18px;
+    line-height: 5vh;
+    margin-right: 19vw;
+    margin-top: 5vh;
+  }
+
+  .about__quote-author {
+    margin-left: 20vw;
+    font-size: 15px;
+    margin-top: 4vh;
+  }
+
+  .about__autobiography-names {
+    margin-left: 20vw;
+    font-size: 20px;
+    margin-top: 4vh;
+    margin-bottom: 0;
+  }
+
+  .about__paragraph-first,
+.about__paragraph-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 11.5px;
+    line-height: 3.2vh;
+  }
+
+  .about__box {
+    margin-left: 16.5vw;
+    margin-right: 15vw;
+  }
+
+  .gallery__header {
+    margin-left: 12.5vw;
+    font-size: 30px;
+    margin-bottom: 5.5vh;
+  }
+
+  .gallery__layout {
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+  }
+
+  .gallery__image {
+    width: 24vw;
+    margin-bottom: 6vh;
+  }
+
+  .footer {
+    height: 65%;
+    margin-top: 0;
+  }
+
+  .footer__header {
+    margin-left: 12.5vw;
+    font-size: 30px;
   }
 
   .footer__social {
-    margin-left: 30vw;
-    margin-top: -2.3rem;
+    margin-left: 38vw;
+    margin-top: -1.8rem;
     width: 300px;
+  }
+
+  .footer__image {
+    height: 17px;
+    margin-left: -2.5vw;
+  }
+
+  .footer__logo {
+    margin-left: 79vw;
+    height: 15px;
+  }
+
+  .footer__contact {
+    display: inline-block;
+    margin-top: 6vh;
+    margin-right: -6vw;
+    margin-left: 7.5vw;
+  }
+
+  .footer__contact-name {
+    font-size: 12px;
+  }
+
+  .footer__contact-address {
+    font-size: 11px;
+  }
+
+  .footer__contact-email {
+    font-size: 11px;
+  }
+
+  .footer__copyright {
+    margin-left: 12.5vw;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -527,13 +706,16 @@ html, body {
     width: 10%;
   }
 
-  .hero__overlay:after {
-    height: 85vh;
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 6.5vh;
   }
 
-  .hero__image {
-    height: 85vh;
-    margin-top: 0;
+  .nav__list-item:active {
+    color: #ffffff;
+    font-weight: 600;
   }
 
   .hero__header {
@@ -580,7 +762,6 @@ html, body {
     display: -ms-flexbox;
     display: flex;
     font-size: 11.5px;
-    /*margin: 3vh 5vw 3vh 5vw;*/
     line-height: 3.2vh;
   }
 
@@ -593,37 +774,19 @@ html, body {
     margin-left: 12.5vw;
   }
 
-  .gallery__layout {
-    margin-left: 11.5vw;
-    margin-right: 11.5vw;
-  }
-
-  .gallery__image {
-    width: 24vw;
-    margin-bottom: 6vh;
-  }
-
-  .footer {
-    height: 65%;
-  }
-
-  .footer__header {
-    margin-left: 12.5vw;
-    font-size: 30px;
-  }
-
   .footer__social {
-    margin-left: 28vw;
+    margin-left: 37vw;
     margin-top: -2rem;
     width: 300px;
   }
 
   .footer__image {
-    height: 20px;
+    height: 18px;
+    margin-left: -2.5vw;
   }
 
   .footer__logo {
-    margin-left: 77.5vw;
+    margin-left: 80vw;
   }
 
   .footer__contact {
@@ -647,7 +810,99 @@ html, body {
 
   .footer__copyright {
     margin-left: 12.5vw;
-    font-size: 12px;
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header__nav-logo {
+    padding-top: 2%;
+    margin-left: 12.5vw;
+  }
+
+  .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -15vw;
+    margin-top: 1.8vh;
+  }
+
+  .nav__list-item {
+    width: 9.5%;
+  }
+
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 7.2vh;
+  }
+
+  .hero__header {
+    top: 24%;
+    left: 12%;
+    font-size: 55px;
+  }
+
+  .about__header {
+    margin-bottom: 5vh;
+  }
+
+  .about__quote-text {
+    margin-left: 20vw;
+    font-size: 24px;
+    margin-right: 25vw;
+  }
+
+  .about__quote-author {
+    font-size: 15px;
+  }
+
+  .about__paragraph-first,
+.about__paragraph-second {
+    font-size: 13px;
+    line-height: 3.2vh;
+  }
+
+  .about__box {
+    margin-right: 18vw;
+  }
+
+  .gallery__layout {
+    margin-left: 11.8vw;
+  }
+
+  .footer__social {
+    margin-left: 35vw;
+    margin-top: -1.8rem;
+    width: 400px;
+  }
+
+  .footer__image {
+    margin-left: -2.5vw;
+  }
+
+  .footer__logo {
+    margin-left: 81.5vw;
+  }
+
+  .footer__contact-name {
+    font-size: 14px;
+  }
+
+  .footer__contact-address {
+    font-size: 13px;
+  }
+
+  .footer__contact-email {
+    font-size: 13px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
