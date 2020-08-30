@@ -24,7 +24,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/*.header {*/
 .header__nav {
   background-color: #323232;
   margin-bottom: 0;
@@ -75,6 +74,18 @@ html, body {
   /* i added this effect for the diving deeper section*/
 }
 
+.header__nav .header__nav-list {
+  list-style-type: none;
+}
+
+.nav__list-item .nav__link {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
 .hero__overlay {
   position: relative;
 }
@@ -95,18 +106,6 @@ html, body {
   width: 100%;
   height: 27vh;
   margin-top: 0;
-}
-
-.header__nav .header__nav-list {
-  list-style-type: none;
-}
-
-.nav__list-item .nav__link {
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
 }
 
 .hero__header {
@@ -139,7 +138,7 @@ html, body {
   font-family: "Avenir";
   font-weight: bold;
   font-size: 16px;
-  line-height: 3vh;
+  line-height: 3.5vh;
   margin: 4vh 5vw 3vh 5vw;
 }
 
@@ -156,15 +155,15 @@ html, body {
   font-family: "Avenir";
   font-weight: bold;
   font-size: 16px;
-  margin: 4.5vh 5vw 3vh 5vw;
+  margin: 4.5vh 5vw 2vh 5vw;
 }
 
 .about__paragraph-first,
 .about__paragraph-second {
   color: #323232;
   font-family: "Avenir";
-  font-size: 12px;
-  margin: 3vh 5vw 3vh 5vw;
+  font-size: 12.2px;
+  margin: 2.5vh 5vw 3vh 5vw;
   line-height: 3vh;
 }
 
@@ -308,20 +307,11 @@ html, body {
 }
 @media only screen and (min-width: 768px) {
   .header__nav-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-left: 4%;
     padding-top: 4%;
   }
 
   .header__nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-left: 0;
     width: 100%;
     margin-top: 0;
@@ -330,10 +320,6 @@ html, body {
   }
 
   .nav__list-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-bottom: none;
     padding-bottom: 0;
     width: 20%;
     margin-top: -2%;
@@ -341,20 +327,16 @@ html, body {
   }
 
   .nav__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 0;
-    font-family: "Avenir";
     font-size: 14px;
-    color: #E1E1E1;
   }
 
   .nav__link:active,
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 6.5vh;
+    padding-bottom: 3.5vh;
+    width: 60%;
   }
 
   .hero__overlay:after {
@@ -371,10 +353,6 @@ html, body {
     left: 4%;
     font-size: 60px;
     line-height: 12.5vh;
-    color: #ffffff;
-    font-family: "Avenir Next";
-    font-weight: bold;
-    font-style: normal;
   }
 
   .about__header {
@@ -384,13 +362,12 @@ html, body {
 
   .about__image {
     width: 91.5vw;
-    /* change in mobile to vw*/
     margin-left: 5vh;
   }
 
   .about__quote-text {
-    font-size: 23.5px;
     font-family: "Avenir Next";
+    font-size: 23.5px;
     line-height: 6vh;
     margin: 6vh 7vw 3vh 4vw;
   }
@@ -403,7 +380,7 @@ html, body {
   .about__autobiography-names {
     font-family: "Avenir Next";
     font-size: 25px;
-    margin: 7vh 5vw 3vh 3.5vw;
+    margin: 7vh 5vw 0vh 3.5vw;
   }
 
   .about__box {
@@ -415,18 +392,16 @@ html, body {
             justify-content: center;
   }
 
-  /*.about__paragraph-box {
-  }*/
   .about__paragraph-first,
 .about__paragraph-second {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 14.2px;
-    /*margin: 3vh 5vw 3vh 5vw;*/
     line-height: 4vh;
     margin-left: 3.5vw;
     margin-right: 2.5vw;
+    margin-top: 2.5vh;
   }
 
   .gallery__header {
@@ -463,7 +438,7 @@ html, body {
   }
 
   .footer {
-    height: 70%;
+    height: 68%;
     margin-top: 2%;
   }
 
@@ -550,7 +525,8 @@ html, body {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 6.5vh;
+    padding-bottom: 3.5vh;
+    width: 60%;
   }
 
   .hero__overlay:after {
@@ -623,6 +599,7 @@ html, body {
     margin-left: 12.5vw;
     font-size: 30px;
     margin-bottom: 5.5vh;
+    margin-top: 6vh;
   }
 
   .gallery__layout {
@@ -636,7 +613,7 @@ html, body {
   }
 
   .footer {
-    height: 65%;
+    height: 56%;
     margin-top: 0;
   }
 
@@ -670,6 +647,7 @@ html, body {
 
   .footer__contact-name {
     font-size: 12px;
+    margin-bottom: 2vh;
   }
 
   .footer__contact-address {
@@ -678,6 +656,8 @@ html, body {
 
   .footer__contact-email {
     font-size: 11px;
+    margin-top: -0.5vw;
+    margin-bottom: -0.5vh;
   }
 
   .footer__copyright {
@@ -710,7 +690,8 @@ html, body {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 6.5vh;
+    padding-bottom: 3.5vh;
+    width: 63%;
   }
 
   .nav__list-item:active {
@@ -774,6 +755,10 @@ html, body {
     margin-left: 12.5vw;
   }
 
+  .footer {
+    height: 57%;
+  }
+
   .footer__social {
     margin-left: 37vw;
     margin-top: -2rem;
@@ -798,6 +783,7 @@ html, body {
 
   .footer__contact-name {
     font-size: 13px;
+    margin-bottom: 2vh;
   }
 
   .footer__contact-address {
@@ -806,6 +792,8 @@ html, body {
 
   .footer__contact-email {
     font-size: 12px;
+    margin-top: -0.5vw;
+    margin-bottom: -0.5vh;
   }
 
   .footer__copyright {
@@ -838,13 +826,15 @@ html, body {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 7.2vh;
+    padding-bottom: 4vh;
+    width: 63%;
   }
 
   .hero__header {
     top: 24%;
     left: 12%;
     font-size: 55px;
+    line-height: 10.5vh;
   }
 
   .about__header {
@@ -881,6 +871,10 @@ html, body {
     width: 400px;
   }
 
+  .footer {
+    height: 57%;
+  }
+
   .footer__image {
     margin-left: -2.5vw;
   }
@@ -891,6 +885,7 @@ html, body {
 
   .footer__contact-name {
     font-size: 14px;
+    margin-bottom: 2vh;
   }
 
   .footer__contact-address {
@@ -899,6 +894,8 @@ html, body {
 
   .footer__contact-email {
     font-size: 13px;
+    margin-top: -0.5vw;
+    margin-bottom: -0.5vh;
   }
 
   .footer__copyright {
