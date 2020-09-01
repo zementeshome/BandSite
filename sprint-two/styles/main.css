@@ -167,11 +167,16 @@ html, body {
   line-height: 3vh;
 }
 
+.gallery {
+  background-color: #FAFAFA;
+}
+
 .gallery__header {
   color: #323232;
   font-family: "Avenir Next";
   font-size: 24px;
   margin: 8vh 5vw 3vh 5vw;
+  padding-top: 4vh;
 }
 
 .gallery__image {
@@ -193,6 +198,121 @@ html, body {
 .gallery__image:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
+}
+
+.comments__header {
+  color: #323232;
+  font-family: "Avenir Next";
+  font-size: 24px;
+  margin: 8vh 5vw 3vh 5vw;
+  padding-top: 4vh;
+}
+
+.comments__portrait {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.comments__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5vh 0vw 0vh 5vw;
+}
+
+/*.comments__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}*/
+form {
+  margin-left: 28vw;
+  margin-top: -15vh;
+}
+
+label {
+  font-family: "Avenir";
+  font-size: 16px;
+  color: #AFAFAF;
+  font-weight: bold;
+}
+
+#name {
+  height: 40px;
+  width: 202px;
+  color: #323232;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid #323232;
+  background-color: #FAFAFA;
+  margin-bottom: 3.5vh;
+  margin-top: 0.5vh;
+}
+
+#comment {
+  height: 90px;
+  width: 202px;
+  color: #323232;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid #E1E1E1;
+  background-color: #FAFAFA;
+  margin-top: 0.5vh;
+}
+
+#submit {
+  height: 50px;
+  width: 209px;
+  color: #323232;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid #323232;
+  background-color: #323232;
+  color: #ffffff;
+  font-family: "Avenir";
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 2vh;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Avenir";
+  font-size: 15px;
+  color: #323232;
+  padding-left: 3vw;
+  padding-top: 1.5vh;
+}
+
+::-moz-placeholder {
+  font-family: "Avenir";
+  font-size: 15px;
+  color: #323232;
+  padding-left: 3vw;
+  padding-top: 1.5vh;
+}
+
+:-ms-input-placeholder {
+  font-family: "Avenir";
+  font-size: 15px;
+  color: #323232;
+  padding-left: 3vw;
+  padding-top: 1.5vh;
+}
+
+::-ms-input-placeholder {
+  font-family: "Avenir";
+  font-size: 15px;
+  color: #323232;
+  padding-left: 3vw;
+  padding-top: 1.5vh;
+}
+
+::placeholder {
+  font-family: "Avenir";
+  font-size: 15px;
+  color: #323232;
+  padding-left: 3vw;
+  padding-top: 1.5vh;
 }
 
 .footer {
@@ -281,6 +401,18 @@ html, body {
     padding-bottom: 1.5vh;
   }
 
+  #name {
+    width: 240px;
+  }
+
+  #comment {
+    width: 240px;
+  }
+
+  #submit {
+    width: 249px;
+  }
+
   .footer__copyright {
     width: 60%;
   }
@@ -299,6 +431,18 @@ html, body {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
     padding-bottom: 1.5vh;
+  }
+
+  #name {
+    width: 275px;
+  }
+
+  #comment {
+    width: 275px;
+  }
+
+  #submit {
+    width: 284px;
   }
 
   .footer__copyright {
