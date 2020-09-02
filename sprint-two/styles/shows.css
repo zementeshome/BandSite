@@ -131,6 +131,14 @@ html, body {
   font-style: normal;
 }
 
+iframe {
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px 5px 5px 5px;
+  top: 65%;
+}
+
 .shows__header {
   color: #323232;
   font-family: "Avenir Next";
@@ -247,5 +255,210 @@ html, body {
   padding-top: 4vh;
   line-height: 3.5vh;
   width: 70%;
+}
+
+@media only screen and (min-width: 375px) {
+  .hero__header-song {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    right: 8%;
+    font-size: 37px;
+    line-height: 8vh;
+  }
+
+  .header__nav-list {
+    margin-top: 1.5vh;
+  }
+
+  .nav__link {
+    padding: 0 10vw 4vh 17vw;
+  }
+
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 1.5vh;
+  }
+
+  .shows__button {
+    width: 340px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .hero__header-song {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    right: 18%;
+    font-size: 37px;
+    line-height: 8vh;
+  }
+
+  .shows__button {
+    width: 382px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header__nav-logo {
+    margin-left: 4%;
+    padding-top: 4%;
+  }
+
+  .header__nav-list {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -4vw;
+  }
+
+  .nav__list-item {
+    padding-bottom: 0;
+    width: 20%;
+    margin-top: -2%;
+    width: 18%;
+  }
+
+  .nav__link {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .nav__link:active,
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 4vh;
+    width: 60%;
+  }
+
+  .hero__overlay:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 115vh;
+    background: rgba(50, 50, 50, 0.5);
+    -webkit-filter: opacity(50%);
+            filter: opacity(50%);
+  }
+
+  .hero__image {
+    width: 100%;
+    height: 115vh;
+    margin-top: 0;
+    /* how to make the image not stretched bigger screen size */
+  }
+
+  .hero__header {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Avenir Next";
+    font-weight: bold;
+    margin-top: 6vh;
+  }
+
+  .hero__header-song {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-size: 60px;
+    line-height: 8vh;
+    color: #ffffff;
+    font-family: "Avenir Next";
+    font-weight: bold;
+    font-style: normal;
+    line-height: 13vh;
+    margin-top: 10vh;
+  }
+
+  iframe {
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 72vh;
+    width: 55%;
+    height: 150px;
+  }
+
+  .shows__button {
+    height: 52px;
+    width: 180px;
+    margin: 2vh 5vw 2vh 5vw;
+    background-color: #323232;
+    color: #ffffff;
+    font-family: "Avenir";
+    font-weight: bold;
+    font-size: 15px;
+    border: #323232;
+    border-radius: 5px 5px 5px 5px;
+    /* button isn't clickable*/
+  }
+
+  .footer {
+    height: 68%;
+    margin-top: 2%;
+  }
+
+  .footer__header {
+    padding-top: 3vh;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 300px;
+    margin-left: 3.5vw;
+    font-size: 38px;
+  }
+
+  .footer__container {
+    display: inline-block;
+  }
+
+  .footer__social {
+    margin-left: 40vw;
+    margin-top: -2.3rem;
+    width: 400px;
+  }
+
+  .footer__image {
+    height: 22px;
+    margin-left: 0;
+  }
+
+  .footer__block {
+    margin-top: -2.8rem;
+  }
+
+  .footer__logo {
+    margin-left: 80vw;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .footer__contact {
+    display: inline-block;
+    margin-top: 6vh;
+    margin-left: -1vw;
+  }
+
+  .footer__contact-name {
+    font-size: 16px;
+  }
+
+  .footer__contact-address {
+    font-size: 14px;
+  }
+
+  .footer__contact-email {
+    font-size: 14px;
+  }
+
+  .footer__copyright {
+    visibility: visible;
+    margin-left: 3.6vw;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=shows.css.map */

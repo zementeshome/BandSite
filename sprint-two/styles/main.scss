@@ -190,13 +190,13 @@ html,body
     padding-top: 4vh;
 }
 
-.comments__portrait {
+/*.comments__portrait {
     position: relative;
     width: 100px;
     height: 100px;
     overflow: hidden;
     border-radius: 50%;
-}
+}*/
 
 .comments__image {
         width: 60px; 
@@ -357,17 +357,30 @@ label {
         padding-bottom: 1.5vh;
     }
 
+    .comments__header {
+        font-size: 28px;
+    }
+
+
+    form {
+        margin-left: 25vw;
+    }
+
     #name {
-        width: 240px;
+        width: 247px;
         
     }
     
     #comment {
-        width: 240px;
+        width: 247px;
     }
     
     #submit {
-        width: 249px;
+        width: 256px;
+    }
+
+    ::placeholder {
+        font-size: 17px;
     }
 
     .footer__copyright {
@@ -394,17 +407,32 @@ label {
         padding-bottom: 1.5vh;
     }
 
+    form {
+        margin-left: 23vw;
+    }
+
+    .comments__header {
+        font-size: 32px;
+    }
+
     #name {
-        width: 275px;
+        width: 292px;
+        height: 50px;
         
     }
     
     #comment {
-        width: 275px;
+        width: 292px;
+        height: 120px;
     }
     
     #submit {
-        width: 284px;
+        width: 301px;
+        height: 50px;
+    }
+
+    ::placeholder {
+        font-size: 20px;
     }
 
     .footer__copyright {
@@ -532,6 +560,46 @@ label {
         margin: 0 auto;
         margin-bottom: 4vh;
     }
+
+    .comments__header {
+        font-size: 35px;
+    }
+
+    .comments__image {
+        margin-left: 15vw;
+    }
+
+    form {
+        margin-left: 25vw;
+    }
+
+    
+    #name {
+        height: 45px;
+        width: 430px;
+    }
+    
+    #comment {
+        height: 110px;
+        width: 430px;
+        margin-top: 0.5vh;
+        margin-bottom: 10vh;
+    }
+    
+    #submit {
+        height: 50px;
+        width: 209px;
+        margin-top: 12vh;
+        margin-bottom: 10vh;
+        margin-left: -28vw;
+    }
+    
+    ::placeholder {
+        font-size: 18px;
+        padding-left: 2vw;
+        padding-top: 2vh;
+    }
+    
 
     .footer {
         height: 68%;
@@ -706,6 +774,51 @@ label {
         margin-bottom: 4vh;
     }
 
+    .comments__image {
+        margin: 8vh 0vw 2vh 28.5vw;
+        height: 50px;
+        width: 50px;
+}   
+    .comments__header {
+        font-size: 26px;
+        margin-left: 12vw;
+    }
+
+    form {
+        margin-left: 35vw;
+    }
+
+    label {
+        font-size: 14px;
+    }
+    
+    #name {
+        height: 40px;
+        width: 370px;
+    }
+    
+    #comment {
+        height: 90px;
+        width: 370px;
+        margin-top: 0.5vh;
+        margin-bottom: 10vh;
+    }
+    
+    #submit {
+        height: 45px;
+        width: 175px;
+        margin-top: 12vh;
+        margin-bottom: 10vh;
+        margin-left: -17.5vw;
+        font-size: 15px;
+    }
+    
+    ::placeholder {
+        font-size: 14px;
+        padding-left: 1vw;
+        padding-top: 2vh;
+    }
+
     .footer {
         height: 56%;
         margin-top: 2vh;
@@ -852,6 +965,29 @@ label {
             margin-left: 12.5vw;
         }
 
+        .comments__image {
+            margin: 8vh 0vw 2vh 30vw;
+    }   
+        .comments__header {
+            font-size: 31px;
+        }
+    
+        form {
+            margin-left: 36vw;
+        }
+        
+        #name {
+            width: 380px;
+        }
+        
+        #comment {
+           width: 380px;
+        }
+        
+        #submit {
+            margin-left: -15vw;
+        }
+        
         .footer {
             height: 57%;
             margin-top: 2vh;
@@ -968,6 +1104,26 @@ label {
 
         .gallery__image {
             margin-bottom: 4vh;
+        }
+        
+        .comments__image {
+            margin: 8vh 0vw 2vh 32.2vw;
+    }   
+        .comments__header {
+            font-size: 37.5px;
+        }
+    
+        form {
+            margin-left: 37vw;
+        }
+        
+        #name,
+        #comment {
+            width: 420px;
+        }
+        
+        #submit {
+            margin-left: -12.5vw;
         }
         
         .footer__social {
