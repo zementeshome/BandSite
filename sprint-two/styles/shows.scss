@@ -91,7 +91,7 @@ html,body
 
 .hero__header {
     position: absolute;
-    top: 7%;
+    top: 1.5%;
     left: 5%;
     font-size: 15px;
     color: $font-color;
@@ -101,7 +101,7 @@ html,body
 
 .hero__header-song {
     position: absolute;
-    top: 13%;
+    top: 2.5%;
     left: 5%;
     font-size: 36.5px;
     line-height: 8vh;
@@ -116,7 +116,7 @@ iframe {
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 5px 5px 5px 5px;
-    top: 65%;
+    top: 11.5%;
 }
 
 // shows
@@ -125,7 +125,7 @@ iframe {
     color: $primary-color;
     font-family: 'Avenir Next';
     font-size: 30px;
-    margin: 4vh 5vw 6vh 5vw;
+    margin: 4vh 5vw 5vh 5vw;
 }
 
 .shows__date,
@@ -134,14 +134,14 @@ iframe {
     font-family: 'Avenir';
     font-size: 16px;
     color: #AFAFAF;
-    margin: 4vh 5vw 2vh 5vw;
+    margin: 3vh 5vw 2vh 5vw;
 }
 
 .shows__date-details {
     font-family: 'Avenir';
     font-size: 18px;
     color: $primary-color;
-    margin: 2vh 5vw 4vh 5vw;
+    margin: 2vh 5vw 3.5vh 5vw;
     font-weight: bold;
 }
 .shows__venue-details,
@@ -155,7 +155,7 @@ iframe {
 .shows__button {
     height: 48px;
     width: 288px;
-    margin: 2vh 5vw 2vh 5vw;
+    margin: 2vh 5vw 1.5vh 5vw;
     background-color: $primary-color;
     color: $font-color;
     font-family: 'Avenir';
@@ -165,18 +165,18 @@ iframe {
     border-radius: 5px 5px 5px 5px; /* button isn't clickable*/
 }
 
-.shows__button-underline:after {
-    content: " ";
-    display: block;
+.shows__button-underline {
+    display: inline-block;
     border-bottom: 2px solid #E1E1E1;
-    margin: 2vh 5vw 2vh 5vw;
-  }
+    margin: 1.5vh 5vw 2vh 5vw;
+    width: 90%;
+}
 // footer 
 
 .footer {
     background-color: $primary-color;
     height: 135%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .footer__header {
@@ -242,7 +242,7 @@ iframe {
     
     .hero__header-song {
         position: absolute;
-        top: 13%;
+        top: 2.5%;
         left: 5%;
         right: 8%;
         font-size: 37px;
@@ -274,7 +274,7 @@ iframe {
     
     .hero__header-song {
         position: absolute;
-        top: 13%;
+        top: 2.5%;
         left: 5%;
         right: 18%;
         font-size: 37px;
@@ -350,7 +350,7 @@ iframe {
     
     .hero__header-song {
         position: absolute;
-        top: 13%;
+        top: 3%;
         left: 5%;
         font-size: 60px;
         line-height: 8vh;
@@ -372,16 +372,7 @@ iframe {
     }
 
     .shows__button {
-        height: 52px;
         width: 180px;
-        margin: 2vh 5vw 2vh 5vw;
-        background-color: $primary-color;
-        color: $font-color;
-        font-family: 'Avenir';
-        font-weight: bold;
-        font-size: 15px;
-        border: $primary-color;
-        border-radius: 5px 5px 5px 5px; /* button isn't clickable*/
     }
 
     .footer {
@@ -444,6 +435,347 @@ iframe {
     .footer__copyright {
         visibility: visible;
         margin-left: 3.6vw;
+        font-size: 14px;
+    }
+}
+
+// media query desktop 1024px
+
+@media only screen and (min-width: 1024px) {
+    
+    .header__nav-logo {
+        padding-top: 3%;
+        margin-left: 15vw;
+        
+    }
+
+    .header__nav-list {
+        display: flex;
+        justify-content: center;
+        margin-left: -5vw;
+        margin-top: 1vh;
+    }
+
+    .nav__list-item {
+        width: 13%;
+    }
+    
+    .nav__link:active,
+    .nav__link:hover {
+        color: $font-color;
+        border-bottom: 5px solid $font-color;
+        padding-bottom: 3.5vh;
+        width: 60%;
+    }
+
+    .hero__overlay:after {
+        content:'';
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:100%;
+        height: 85vh;
+        background: rgba(50, 50, 50, 0.5);
+        filter: opacity(50%);
+    }
+        
+    .hero__image {
+        width: 100%;
+        height: 85vh;
+        margin-top: 0; /* how to make the image not stretched bigger screen size */
+    }
+    
+    .hero__header {
+        font-size: 22px;
+        color: $font-color;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+        margin-top: 12vh;
+        left: 15%;
+    }
+    
+    .hero__header-song {
+        position: absolute;
+        top: 2.5%;
+        left: 15%;
+        right: 42%;
+        font-size: 45px;
+        line-height: 8vh;
+        color: $font-color;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+        font-style: normal;
+        line-height: 10vh;
+        margin-top: 15vh;
+    }
+    
+    iframe {
+        position: absolute;
+        margin-left: 5%;
+        left: 56%;
+        top: 34vh;
+        width: 30%; 
+        height: 105px; 
+    }
+
+    .footer {
+        height: 56%;
+        margin-top: 2vh;
+    }
+    .footer__header {
+        margin-left: 12.5vw;
+        font-size: 30px;
+    }
+
+    .footer__social {
+        margin-left: 38vw;
+        margin-top: -1.8rem;
+        width: 300px;
+    }
+
+    .footer__image {
+        height: 17px;
+        margin-left: -2.5vw;
+
+    }
+
+    .footer__logo {
+        margin-left: 79vw;
+        height: 15px;
+    }
+
+    .footer__contact {
+        display: inline-block;
+        margin-top: 6vh;
+        margin-right: -6vw;
+        margin-left: 7.5vw;
+    }
+
+    .footer__contact-name {
+        font-size: 12px;
+        margin-bottom: 2vh;
+    }
+
+    .footer__contact-address {
+        font-size: 11px;
+    }
+
+    .footer__contact-email {
+        font-size: 11px;
+        margin-top: -0.5vw;
+        margin-bottom: -0.5vh;
+    }
+
+    .footer__copyright {
+        margin-left: 12.5vw;
+        font-size: 12px;
+
+    }
+}
+
+// media query desktop 1200px
+
+@media only screen and (min-width: 1200px) {
+    
+    .header__nav-logo {
+        padding-top: 2.5%;
+        margin-left: 15vw;
+        
+    }
+
+    .header__nav-list {
+        display: flex;
+        justify-content: center;
+        margin-left: -10vw;
+        margin-top: 1.5vh;
+    }
+
+    .nav__list-item {
+        width: 10%;
+    }
+
+    .nav__link:active,
+    .nav__link:hover {
+        color: $font-color;
+        border-bottom: 5px solid $font-color;
+        padding-bottom: 3.5vh;
+        width: 63%;
+    }
+
+    .nav__list-item:active {
+        color: $font-color;
+        font-weight: 600;
+    }
+
+    .hero__header-song {
+        position: absolute;
+        top: 2.5%;
+        left: 15%;
+        right: 48%;
+        font-size: 47px;
+        line-height: 8vh;
+        color: $font-color;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+        font-style: normal;
+        line-height: 10vh;
+        margin-top: 15vh;
+    }
+
+    iframe {
+        position: absolute;
+        margin-left: 5%;
+        left: 52%;
+        top: 34vh;
+        width: 33%; 
+        height: 107px; 
+    }
+
+    .footer {
+        height: 57%;
+        margin-top: 2vh;
+    }
+
+    .footer__social {
+        margin-left: 37vw;
+        margin-top: -2rem;
+        width: 300px;
+    }
+
+    .footer__image {
+        height: 18px;
+        margin-left: -2.5vw;
+    }
+
+
+    .footer__logo {
+        margin-left: 80vw;
+    }
+
+    .footer__contact {
+        display: inline-block;
+        margin-top: 6vh;
+        margin-right: -6vw;
+        margin-left: 7.5vw;
+    }
+
+    .footer__contact-name {
+        font-size: 13px;
+        margin-bottom: 2vh;
+    }
+
+    .footer__contact-address {
+        font-size: 12px;
+    }
+
+    .footer__contact-email {
+        font-size: 12px;
+        margin-top: -0.5vw;
+        margin-bottom: -0.5vh;
+    }
+
+    .footer__copyright {
+        margin-left: 12.5vw;
+        font-size: 13px;
+
+    }
+
+}
+
+// media query desktop 1440px
+
+@media only screen and (min-width: 1440px) {
+    .header__nav-logo {
+        padding-top: 2%;
+        margin-left: 12.5vw;    
+    }
+
+    .header__nav-list {
+        display: flex;
+        justify-content: center;
+        margin-left: -15vw;
+        margin-top: 1.8vh;
+    }
+
+    .nav__list-item {
+        width: 9.5%;
+    }
+
+    .nav__link:active,
+    .nav__link:hover {
+        color: $font-color;
+        border-bottom: 5px solid $font-color;
+        padding-bottom: 3.5vh;
+        width: 63%;
+    }
+
+    .hero__header {
+        font-size: 22px;
+        color: $font-color;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+        margin-top: 12vh;
+        left: 12%;
+    }
+    
+    .hero__header-song {
+        position: absolute;
+        top: 2.5%;
+        left: 12%;
+        right: 50%;
+        font-size: 55px;
+        line-height: 8vh;
+        color: $font-color;
+        font-family: 'Avenir Next';
+        font-weight: bold;
+        font-style: normal;
+        line-height: 12vh;
+        margin-top: 15vh;
+    }
+    
+    iframe {
+        position: absolute;
+        margin-left: 5%;
+        left: 47%;
+        top: 40vh;
+        width: 30%; 
+        height: 120px; 
+    }
+
+    .footer__social {
+        margin-left: 35vw;
+        margin-top: -1.8rem;
+        width: 400px;
+    }
+    .footer {
+        height: 57%;
+        margin-top: 2vh;
+    }
+    .footer__image {
+        margin-left: -2.5vw;
+    }
+
+    .footer__logo {
+        margin-left: 81.5vw;
+    }
+
+    .footer__contact-name {
+        font-size: 14px;
+        margin-bottom: 2vh;
+    }
+
+    .footer__contact-address {
+        font-size: 13px;
+
+    }
+
+    .footer__contact-email {
+        font-size: 13px;
+        margin-top: -0.5vw;
+        margin-bottom: -0.5vh;
+    }
+
+    .footer__copyright {
         font-size: 14px;
     }
 }
