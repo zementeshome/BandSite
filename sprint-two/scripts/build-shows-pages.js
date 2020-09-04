@@ -1,5 +1,5 @@
 
-// shows section
+// shows section mobile
 
 let main = document.createElement('main');
   main.classList.add('main');
@@ -17,6 +17,11 @@ let section = document.createElement('section');
  showsInfo.appendChild(showsHeader);
  document.body.querySelector('div').appendChild(showsInfo);
 
+//  let showsHeader2 = document.createElement('h2');
+//  showsHeader2.classList.add('shows__header2');
+//  showsHeader2.innerText = 'Shows';
+//  showsInfo.appendChild(showsHeader2);
+//  document.body.querySelector('div').appendChild(showsInfo);
 
 let showsDate = document.createElement('h3');
  showsDate.classList.add('shows__date');
@@ -121,7 +126,7 @@ let showsDate3 = document.createElement('h3');
 
  let showsDateDetails3 = document.createElement('p');
  showsDateDetails3.classList.add('shows__date-details');
- showsDateDetails3.innerText = 'Fri July 22 2019';
+ showsDateDetails3.innerText = 'Fri Jul 22 2019';
  showsInfo.appendChild(showsDateDetails3);
  document.body.querySelector('div').appendChild(showsInfo);
 
@@ -300,68 +305,3 @@ let showsButtonUnderline6 = document.createElement('span');
 showsButtonUnderline6.classList.add('shows__button-underline');
 showsInfo.appendChild(showsButtonUnderline6);
 document.body.querySelector('div').appendChild(showsInfo);
-
-
-/* <section class="shows">
-    <h2 class="shows__header">Shows</h2>
-      <div class="shows__info">
-          <h3 class="shows__date">DATE</h3>
-              <p class="shows__date-details">Mon Dec 17 2018</p>
-              <h3 class="shows__venue">VENUE</h3>
-              <p class="shows__venue-details">Ronald Lane</p>
-              <h3 class="shows__location">LOCATION</h3>
-          <p class="shows__location-details">San Francisco, CA</p>
-      </div>
-          <button class="shows__button">BUY TICKETS</button>
-          <div class="shows__button-underline"></div>
-      <div class="shows__info">
-              <h3 class="shows__date">DATE</h3>
-              <p class="shows__date-details">Tue Jul 18 2019</p>
-              <h3 class="shows__venue">VENUE</h3>
-              <p class="shows__venue-details">Pier 3 East</p>
-              <h3 class="shows__location">LOCATION</h3>
-              <p class="shows__location-details">San Francisco, CA</p>
-      </div>
-          <button class="shows__button">BUY TICKETS</button>
-      <div class="shows__button-underline"></div>
-      <div class="shows__info">
-              <h3 class="shows__date">DATE</h3>
-              <p class="shows__date-details">Fri Jul 22 2019</p>
-              <h3 class="shows__venue">VENUE</h3>
-              <p class="shows__venue-details">View Loungue</p>
-              <h3 class="shows__location">LOCATION</h3>
-              <p class="shows__location-details">San Francisco, CA</p>
-      </div>
-          <button class="shows__button">BUY TICKETS</button>
-      <div class="shows__button-underline"></div>
-      <div class="shows__info">
-              <h3 class="shows__date">DATE</h3>
-              <p class="shows__date-details">Sat Aug 21 2019</p>
-              <h3 class="shows__venue">VENUE</h3>
-              <p class="shows__venue-details">Hyatt Agency</p>
-              <h3 class="shows__location">LOCATION</h3>
-              <p class="shows__location-details">San Francisco, CA</p>
-      </div>
-          <button class="shows__button">BUY TICKETS</button>
-      <div class="shows__button-underline"></div>
-      <div class="shows__info">
-              <h3 class="shows__date">DATE</h3>
-              <p class="shows__date-details">Fri Sep 05 2019</p>
-              <h3 class="shows__venue">VENUE</h3>
-              <p class="shows__venue-details">Moscow Center</p>
-              <h3 class="shows__location">LOCATION</h3>
-              <p class="shows__location-details">San Francisco, CA</p>
-      </div>
-          <button class="shows__button">BUY TICKETS</button>
-      <div class="shows__button-underline"></div>
-      <div class="shows__info">
-              <h3 class="shows__date">DATE</h3>
-              <p class="shows__date-details">Wed Aug 11 2019</p>
-              <h3 class="shows__venue">VENUE</h3>
-              <p class="shows__venue-details">Pres Club</p>
-              <h3 class="shows__location">LOCATION</h3>
-              <p class="shows__location-details">San Francisco, CA</p>
-      </div>
-          <button class="shows__button">BUY TICKETS</button>
-      <div class="shows__button-underline"></div>
-  </section> */

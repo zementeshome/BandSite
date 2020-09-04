@@ -146,6 +146,10 @@ iframe {
   margin: 4vh 5vw 5vh 5vw;
 }
 
+.shows__header2 {
+  display: none;
+}
+
 .shows__date,
 .shows__venue,
 .shows__location {
@@ -384,13 +388,112 @@ iframe {
     height: 150px;
   }
 
+  .shows__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 15vh;
+    margin-bottom: 0;
+  }
+
   .shows__button {
     width: 180px;
   }
 
+  .shows__header {
+    font-size: 40px;
+    color: #323232;
+    font-family: "Avenir Next";
+    width: 127.33px;
+    height: 50px;
+    margin-top: -20vh;
+    margin-left: 5vw;
+    margin-bottom: -5vh;
+    margin-right: 0;
+    display: none;
+  }
+
+  .shows__date,
+.shows__venue,
+.shows__location {
+    font-family: "Avenir";
+    font-size: 16px;
+    color: #AFAFAF;
+    margin: 3vh 5vw 2vh 5vw;
+    display: none;
+  }
+
+  .shows__date-details {
+    font-family: "Avenir";
+    font-size: 18px;
+    color: #323232;
+    margin-top: 5vh;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 153.6px;
+    height: 25px;
+  }
+
+  .shows__venue-details {
+    font-family: "Avenir";
+    font-size: 15px;
+    color: #323232;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-right: 0;
+    display: flex;
+    width: 105.32px;
+    height: 28px;
+  }
+
+  .shows__location-details {
+    font-family: "Avenir";
+    font-size: 15px;
+    color: #323232;
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .shows__button {
+    height: 48px;
+    width: 150px;
+    margin-left: 75vw;
+    margin-top: -10vh;
+    background-color: #323232;
+    color: #ffffff;
+    font-family: "Avenir";
+    font-weight: bold;
+    font-size: 15px;
+    border: #323232;
+    border-radius: 5px 5px 5px 5px;
+    /* button isn't clickable*/
+  }
+
+  .shows__button-underline {
+    display: inline-block;
+    border-bottom: 2px solid #E1E1E1;
+    margin: 1.5vh 5vw 1vh 5vw;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .footer {
     height: 68%;
-    margin-top: 2%;
+    margin-top: 4.5%;
   }
 
   .footer__header {
