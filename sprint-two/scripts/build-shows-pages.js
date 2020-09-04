@@ -17,11 +17,30 @@ let section = document.createElement('section');
  showsInfo.appendChild(showsHeader);
  document.body.querySelector('div').appendChild(showsInfo);
 
-//  let showsHeader2 = document.createElement('h2');
-//  showsHeader2.classList.add('shows__header2');
-//  showsHeader2.innerText = 'Shows';
-//  showsInfo.appendChild(showsHeader2);
-//  document.body.querySelector('div').appendChild(showsInfo);
+let showsHeader2 = document.createElement('h2');
+showsHeader2.classList.add('shows__header2');
+showsHeader2.innerText = 'Shows';
+showsInfo.appendChild(showsHeader2);
+document.body.querySelector('div').appendChild(showsInfo);
+
+let showsDateTablet = document.createElement('h3');
+ showsDateTablet.classList.add('shows__date-tablet');
+ console.log(showsDateTablet);
+ showsDateTablet.innerText = 'DATES';
+ showsInfo.appendChild(showsDateTablet);
+ document.body.querySelector('div').appendChild(showsInfo);
+
+let showsVenueTablet = document.createElement('h3');
+showsVenueTablet.classList.add('shows__venue-tablet');
+showsVenueTablet.innerText = 'VENUE';
+showsInfo.appendChild(showsVenueTablet);
+document.body.querySelector('div').appendChild(showsInfo);
+
+let showsLocationTablet = document.createElement('h3');
+showsLocationTablet.classList.add('shows__location-tablet');
+showsLocationTablet.innerText = 'LOCATION';
+showsInfo.appendChild(showsLocationTablet);
+document.body.querySelector('div').appendChild(showsInfo);
 
 let showsDate = document.createElement('h3');
  showsDate.classList.add('shows__date');

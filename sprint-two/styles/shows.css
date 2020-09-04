@@ -159,6 +159,12 @@ iframe {
   margin: 3vh 5vw 2vh 5vw;
 }
 
+.shows__date-tablet,
+.shows__venue-tablet,
+.shows__location-tablet {
+  display: none;
+}
+
 .shows__date-details {
   font-family: "Avenir";
   font-size: 18px;
@@ -388,6 +394,14 @@ iframe {
     height: 150px;
   }
 
+  .shows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
   .shows__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,8 +415,20 @@ iframe {
     margin-bottom: 0;
   }
 
-  .shows__button {
-    width: 180px;
+  .shows__header2 {
+    font-size: 40px;
+    color: #323232;
+    font-family: "Avenir Next";
+    margin-top: -15vh;
+    margin-left: 5vw;
+    margin-bottom: -5vh;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 127.33px;
+    height: 40px;
+    display: none;
   }
 
   .shows__header {
@@ -411,11 +437,45 @@ iframe {
     font-family: "Avenir Next";
     width: 127.33px;
     height: 50px;
-    margin-top: -20vh;
+    margin-top: -5vh;
     margin-left: 5vw;
     margin-bottom: -5vh;
-    margin-right: 0;
-    display: none;
+    margin-right: 60vw;
+  }
+
+  .shows__date-tablet {
+    font-family: "Avenir";
+    font-size: 16px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-left: 5vw;
+    margin-right: 20vw;
+    margin-top: 10vh;
+  }
+
+  .shows__venue-tablet {
+    font-family: "Avenir";
+    font-size: 16px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 12vw;
+    margin-top: 10vh;
+  }
+
+  .shows__location-tablet {
+    font-family: "Avenir";
+    font-size: 16px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 20vw;
+    margin-top: 10vh;
+  }
+
+  .shows__button {
+    width: 180px;
   }
 
   .shows__date,
@@ -630,14 +690,174 @@ iframe {
     position: absolute;
     margin-left: 5%;
     left: 56%;
-    top: 34vh;
+    top: 30vh;
     width: 30%;
     height: 105px;
   }
 
+  .shows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
+  .shows__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 15vh;
+    margin-bottom: 0;
+  }
+
+  .shows__header2 {
+    font-size: 40px;
+    color: #323232;
+    font-family: "Avenir Next";
+    margin-top: -15vh;
+    margin-left: 5vw;
+    margin-bottom: -5vh;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 127.33px;
+    height: 40px;
+    display: none;
+  }
+
+  .shows__header {
+    font-size: 30px;
+    color: #323232;
+    font-family: "Avenir Next";
+    width: 127.33px;
+    height: 50px;
+    margin-top: -5vh;
+    margin-left: 5vw;
+    margin-bottom: -5vh;
+    margin-right: 60vw;
+  }
+
+  .shows__date-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-left: 25vw;
+    margin-right: 15vw;
+    margin-top: -5vh;
+  }
+
+  .shows__venue-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 12vw;
+    margin-top: -5vh;
+  }
+
+  .shows__location-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 20vw;
+    margin-top: -5vh;
+  }
+
+  .shows__button {
+    width: 180px;
+  }
+
+  .shows__date,
+.shows__venue,
+.shows__location {
+    font-family: "Avenir";
+    font-size: 16px;
+    color: #AFAFAF;
+    margin: 3vh 5vw 2vh 5vw;
+    display: none;
+  }
+
+  .shows__date-details {
+    font-family: "Avenir";
+    font-size: 14px;
+    color: #323232;
+    margin-top: 5vh;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 153.6px;
+    height: 25px;
+    margin-left: 25vw;
+  }
+
+  .shows__venue-details {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #323232;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: -1vw;
+    margin-right: 0;
+    display: flex;
+    width: 105.32px;
+    height: 28px;
+  }
+
+  .shows__location-details {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #323232;
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .shows__button {
+    height: 48px;
+    width: 125px;
+    margin-left: 75vw;
+    margin-top: -10vh;
+    background-color: #323232;
+    color: #ffffff;
+    font-family: "Avenir";
+    font-weight: bold;
+    font-size: 12px;
+    border: #323232;
+    border-radius: 5px 5px 5px 5px;
+    /* button isn't clickable*/
+  }
+
+  .shows__button-underline {
+    display: inline-block;
+    border-bottom: 2px solid #E1E1E1;
+    margin: 1.5vh 5vw 1vh 5vw;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 25vw;
+    margin-right: 13vw;
+  }
+
   .footer {
     height: 56%;
-    margin-top: 2vh;
+    margin-top: 5vh;
   }
 
   .footer__header {
@@ -741,14 +961,159 @@ iframe {
     position: absolute;
     margin-left: 5%;
     left: 52%;
-    top: 34vh;
+    top: 30vh;
     width: 33%;
     height: 107px;
   }
 
+  .shows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
+  .shows__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 15vh;
+    margin-bottom: 0;
+  }
+
+  .shows__header {
+    font-size: 30px;
+    color: #323232;
+    font-family: "Avenir Next";
+    width: 127.33px;
+    height: 50px;
+    margin-top: -5vh;
+    margin-left: 10vw;
+    margin-bottom: -5vh;
+    margin-right: 60vw;
+  }
+
+  .shows__date-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-left: 28vw;
+    margin-right: 15vw;
+    margin-top: -5vh;
+  }
+
+  .shows__venue-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 10vw;
+    margin-top: -5vh;
+  }
+
+  .shows__location-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 20vw;
+    margin-top: -5vh;
+  }
+
+  .shows__button {
+    width: 200px;
+    height: 25px;
+  }
+
+  .shows__date,
+.shows__venue,
+.shows__location {
+    font-family: "Avenir";
+    font-size: 16px;
+    color: #AFAFAF;
+    margin: 3vh 5vw 2vh 5vw;
+    display: none;
+  }
+
+  .shows__date-details {
+    font-family: "Avenir";
+    font-size: 14px;
+    color: #323232;
+    margin-top: 5vh;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 153.6px;
+    height: 25px;
+    margin-left: 28vw;
+  }
+
+  .shows__venue-details {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #323232;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 0vw;
+    margin-right: 0;
+    display: flex;
+    width: 105.32px;
+    height: 28px;
+  }
+
+  .shows__location-details {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #323232;
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .shows__button {
+    height: 45px;
+    width: 135px;
+    margin-left: 75vw;
+    margin-top: -10vh;
+    background-color: #323232;
+    color: #ffffff;
+    font-family: "Avenir";
+    font-weight: bold;
+    font-size: 12px;
+    border: #323232;
+    border-radius: 5px 5px 5px 5px;
+    /* button isn't clickable*/
+  }
+
+  .shows__button-underline {
+    display: inline-block;
+    border-bottom: 2px solid #E1E1E1;
+    margin: 1.5vh 5vw 1vh 5vw;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 28vw;
+    margin-right: 14vw;
+  }
+
   .footer {
     height: 57%;
-    margin-top: 2vh;
+    margin-top: 5vh;
   }
 
   .footer__social {
@@ -763,7 +1128,7 @@ iframe {
   }
 
   .footer__logo {
-    margin-left: 80vw;
+    margin-left: 79vw;
   }
 
   .footer__contact {
@@ -850,9 +1215,74 @@ iframe {
     position: absolute;
     margin-left: 5%;
     left: 47%;
-    top: 40vh;
+    top: 33vh;
     width: 30%;
     height: 120px;
+  }
+
+  .shows__info {
+    margin-bottom: 5vh;
+  }
+
+  .shows__header {
+    margin-left: 15vw;
+  }
+
+  .shows__date-details {
+    font-family: "Avenir";
+    font-size: 14px;
+    color: #323232;
+    margin-top: 5vh;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 153.6px;
+    height: 25px;
+    margin-left: 31vw;
+  }
+
+  .shows__date-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-left: 31vw;
+    margin-right: 13vw;
+    margin-top: -5vh;
+  }
+
+  .shows__venue-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 9.5vw;
+    margin-top: -5vh;
+  }
+
+  .shows__location-tablet {
+    font-family: "Avenir";
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -10vh;
+    display: inline-block;
+    margin-right: 20vw;
+    margin-top: -5vh;
+  }
+
+  .shows__button-underline {
+    display: inline-block;
+    border-bottom: 2px solid #E1E1E1;
+    margin: 1.5vh 5vw 1vh 5vw;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 31vw;
+    margin-right: 15.5vw;
   }
 
   .footer__social {
@@ -871,7 +1301,7 @@ iframe {
   }
 
   .footer__logo {
-    margin-left: 81.5vw;
+    margin-left: 78.5vw;
   }
 
   .footer__contact-name {
