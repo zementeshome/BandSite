@@ -256,7 +256,7 @@ label {
     font-weight: bold;
     font-size: 15px;
     margin-top: 2vh;
-    margin-bottom: 4vh;
+    margin-bottom: 6vh;
 }
 
 ::placeholder {
@@ -288,7 +288,7 @@ label {
     color: $primary-color;
     font-size: 14px;
     margin-left: 27vw;
-    margin-top: -9vh;
+    margin-top: -8.5vh;
 }
 .comments__date{
     font-family: 'Avenir';
@@ -312,7 +312,7 @@ label {
 .footer {
     background-color: $primary-color;
     height: 135%;
-    margin-top: 12%;
+    margin-top: 7%;
 }
 
 .footer__header {
@@ -451,6 +451,22 @@ label {
     form {
         margin-left: 23vw;
     }
+
+    .comments__username {
+    font-family: 'Avenir';
+    font-weight: bold;
+    color: $primary-color;
+    font-size: 14px;
+    margin-left: 22vw;
+    margin-top: -8.5vh;
+}
+    .comments__post {
+    font-family: 'Avenir';
+    color: $primary-color;
+    font-size: 13px;
+    margin-right:8vw;
+    margin-left: 22vw;
+}
 
     .comments__header {
         font-size: 32px;
@@ -631,7 +647,7 @@ label {
         height: 50px;
         width: 209px;
         margin-top: 12vh;
-        margin-bottom: 10vh;
+        margin-bottom: 3vh;
         margin-left: -28vw;
     }
     
@@ -640,7 +656,34 @@ label {
         padding-left: 2vw;
         padding-top: 2vh;
     }
+
+    .comments__underline {
+        margin: 1.5vh 5vw 2vh 14vw;
+        width: 67%;
+    }
     
+    .comments__circle {
+        margin:2vh 0vw 0vh 14vw;
+    
+    }
+    
+    .comments__username {
+        font-size: 16px;
+        margin-left: 23vw;
+        margin-top: -8.5vh;
+    }
+    .comments__date{
+        font-size: 16px;
+        margin-left: 42vw;
+        margin-right: 5vw;
+        margin-top: -8.5vh;
+    }
+    .comments__post {
+        font-size: 14px;
+        margin-right:18vw;
+        margin-left: 23vw;
+    
+    }
 
     .footer {
         height: 68%;
@@ -860,6 +903,34 @@ label {
         padding-top: 2vh;
     }
 
+    .comments__underline {
+        margin: 1.5vh 5vw 2vh 25vw;
+        width: 47%;
+    }
+    
+    .comments__circle {
+        margin:2vh 0vw 0vh 25vw;
+    
+    }
+    
+    .comments__username {
+        font-size: 14px;
+        margin-left: 31.5vw;
+        margin-top: -8.5vh;
+    }
+    .comments__date{
+        font-size: 14px;
+        margin-left: 44vw;
+        margin-right: 5vw;
+        margin-top: -7.5vh;
+    }
+    .comments__post {
+        font-size: 14px;
+        margin-right:28vw;
+        margin-left: 31.5vw;
+    
+    }
+
     .footer {
         height: 56%;
         margin-top: 2vh;
@@ -1027,6 +1098,24 @@ label {
         
         #submit {
             margin-left: -15vw;
+            margin-bottom: 3vh;
+        }
+
+        .comments__underline {
+            margin: 1.5vh 5vw 2vh 25vw;
+            width: 44%;
+        }
+        
+        .comments__circle {
+            margin:2vh 0vw 0vh 25vw;
+        
+        }
+        
+        .comments__post {
+            font-size: 14px;
+            margin-right:30vw;
+            margin-left: 31.5vw;
+        
         }
         
         .footer {
@@ -1165,6 +1254,27 @@ label {
         
         #submit {
             margin-left: -12.5vw;
+        }
+
+        .comments__underline {
+            margin: 1.5vh 5vw 2vh 27vw;
+            width: 40%;
+        }
+        
+        .comments__circle {
+            margin:2vh 0vw 0vh 27vw;
+        
+        }
+
+        .comments__date {
+            margin-left: 40vw;
+        }
+        
+        .comments__post {
+            font-size: 14px;
+            margin-right:35vw;
+            margin-left: 31.5vw;
+        
         }
         
         .footer__social {
