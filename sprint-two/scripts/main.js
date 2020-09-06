@@ -9,6 +9,8 @@ form.addEventListener('submit', function(e) {
 
 // comments section dom manipulation
 
+//function commentsStyle() {
+
 let main = document.createElement('main');
   main.classList.add('main');
 
@@ -108,7 +110,12 @@ commentsDisplay.appendChild(commentsUnderline4);
 document.body.querySelector('main').appendChild(commentsDisplay);
 
 
-// // default comments
+//}
+
+//displayComment()
+
+//}
+// default comments
 
 // let users = [
 //     {
@@ -132,12 +139,40 @@ document.body.querySelector('main').appendChild(commentsDisplay);
 // ];
 // // // added comments 
 
-// function displayComment(comment) {
-//     return comment()
-// } 
+function commentsStyle() {
 
-//  }
-// */
+  let display = document.createElement('div');
+  display.classList.add('comments__displayed');
+  let underline = document.createElement('span');
+  underline.classList.add('comments__underline');
+  display.appendChild(underline);
+  document.body.querySelector('main').appendChild(display)
+  let profileCircle = document.createElement('div');
+  profileCircle.classList.add('comments__circle');
+  display.appendChild(profileCircle);
+  document.querySelector('main').appendChild(display);
+  let user = document.createElement('h5');
+  user.classList.add('comments__username');
+  display.appendChild(user);
+  document.querySelector('main').appendChild(display);
+  let commentPost = document.createElement('p');
+  commentPost.classList.add('comments__post');
+  display.appendChild(commentPost);
+  document.body.querySelector('main').appendChild(display);
+
+}
+
+function displayComment() {
+
+
+  document.getElementById('display').innerHTML =
+  document.getElementById('name').value
+  document.getElementById('display2').innerHTML =
+  document.getElementById('comment').value 
+
+};
+
+
 
 // // if (whatever is in here is true, let it run)
 
