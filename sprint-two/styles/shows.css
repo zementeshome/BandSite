@@ -22,6 +22,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  font-family: "Avenir";
 }
 
 .header__nav {
@@ -60,7 +61,6 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   padding: 0 18vw 4vh 15vw;
-  font-family: "Avenir";
   font-size: 14px;
   color: #E1E1E1;
 }
@@ -115,7 +115,6 @@ html, body {
   left: 5%;
   font-size: 15px;
   color: #ffffff;
-  font-family: "Avenir";
   font-weight: bold;
 }
 
@@ -126,9 +125,9 @@ html, body {
   font-size: 36.5px;
   line-height: 8vh;
   color: #ffffff;
-  font-family: "Avenir Next";
   font-weight: bold;
   font-style: normal;
+  font-family: "Avenir Next";
 }
 
 iframe {
@@ -141,9 +140,9 @@ iframe {
 
 .shows__header {
   color: #323232;
-  font-family: "Avenir Next";
   font-size: 30px;
   margin: 4vh 5vw 5vh 5vw;
+  font-family: "Avenir Next";
 }
 
 .shows__header2 {
@@ -153,7 +152,6 @@ iframe {
 .shows__date,
 .shows__venue,
 .shows__location {
-  font-family: "Avenir";
   font-size: 16px;
   color: #AFAFAF;
   margin: 3vh 5vw 2vh 5vw;
@@ -166,7 +164,6 @@ iframe {
 }
 
 .shows__date-details {
-  font-family: "Avenir";
   font-size: 18px;
   color: #323232;
   margin: 2vh 5vw 3.5vh 5vw;
@@ -175,7 +172,6 @@ iframe {
 
 .shows__venue-details,
 .shows__location-details {
-  font-family: "Avenir";
   font-size: 15px;
   color: #323232;
   margin: 2vh 5vw 3vh 5vw;
@@ -187,7 +183,6 @@ iframe {
   margin: 2vh 5vw 1.5vh 5vw;
   background-color: #323232;
   color: #ffffff;
-  font-family: "Avenir";
   font-weight: bold;
   font-size: 15px;
   border: #323232;
@@ -204,7 +199,7 @@ iframe {
 
 .footer {
   background-color: #323232;
-  height: 135%;
+  height: 140%;
   margin-top: 10%;
 }
 
@@ -230,14 +225,12 @@ iframe {
 
 .footer__contact-name {
   color: #ffffff;
-  font-family: "Avenir";
   font-size: 14px;
   margin-left: 5vw;
   line-height: 3.5vh;
 }
 
 .footer__contact-address {
-  font-family: "Avenir";
   font-size: 14px;
   color: #ffffff;
   margin-left: 5vw;
@@ -245,7 +238,6 @@ iframe {
 }
 
 .footer__contact-email {
-  font-family: "Avenir";
   font-size: 14px;
   color: #ffffff;
   margin-left: 5vw;
@@ -258,7 +250,6 @@ iframe {
 }
 
 .footer__copyright {
-  font-family: "Avenir";
   font-size: 14px;
   color: #ffffff;
   margin-left: 5vw;
@@ -444,7 +435,6 @@ iframe {
   }
 
   .shows__date-tablet {
-    font-family: "Avenir";
     font-size: 16px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -455,7 +445,6 @@ iframe {
   }
 
   .shows__venue-tablet {
-    font-family: "Avenir";
     font-size: 16px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -465,7 +454,6 @@ iframe {
   }
 
   .shows__location-tablet {
-    font-family: "Avenir";
     font-size: 16px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -481,7 +469,6 @@ iframe {
   .shows__date,
 .shows__venue,
 .shows__location {
-    font-family: "Avenir";
     font-size: 16px;
     color: #AFAFAF;
     margin: 3vh 5vw 2vh 5vw;
@@ -489,7 +476,6 @@ iframe {
   }
 
   .shows__date-details {
-    font-family: "Avenir";
     font-size: 18px;
     color: #323232;
     margin-top: 5vh;
@@ -502,7 +488,6 @@ iframe {
   }
 
   .shows__venue-details {
-    font-family: "Avenir";
     font-size: 15px;
     color: #323232;
     display: -webkit-box;
@@ -517,7 +502,6 @@ iframe {
   }
 
   .shows__location-details {
-    font-family: "Avenir";
     font-size: 15px;
     color: #323232;
     margin-top: 5vh;
@@ -533,12 +517,11 @@ iframe {
     margin-top: -10vh;
     background-color: #323232;
     color: #ffffff;
-    font-family: "Avenir";
     font-weight: bold;
     font-size: 15px;
     border: #323232;
     border-radius: 5px 5px 5px 5px;
-    /* button isn't clickable*/
+    font-family: "Avenir";
   }
 
   .shows__button-underline {
@@ -639,7 +622,7 @@ iframe {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 3.5vh;
+    padding-bottom: 3.7vh;
     width: 60%;
   }
 
@@ -745,7 +728,6 @@ iframe {
   }
 
   .shows__date-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -756,7 +738,6 @@ iframe {
   }
 
   .shows__venue-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -766,7 +747,6 @@ iframe {
   }
 
   .shows__location-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -782,7 +762,6 @@ iframe {
   .shows__date,
 .shows__venue,
 .shows__location {
-    font-family: "Avenir";
     font-size: 16px;
     color: #AFAFAF;
     margin: 3vh 5vw 2vh 5vw;
@@ -790,7 +769,6 @@ iframe {
   }
 
   .shows__date-details {
-    font-family: "Avenir";
     font-size: 14px;
     color: #323232;
     margin-top: 5vh;
@@ -804,7 +782,6 @@ iframe {
   }
 
   .shows__venue-details {
-    font-family: "Avenir";
     font-size: 12px;
     color: #323232;
     display: -webkit-box;
@@ -819,7 +796,6 @@ iframe {
   }
 
   .shows__location-details {
-    font-family: "Avenir";
     font-size: 12px;
     color: #323232;
     margin-top: 5vh;
@@ -835,12 +811,10 @@ iframe {
     margin-top: -10vh;
     background-color: #323232;
     color: #ffffff;
-    font-family: "Avenir";
     font-weight: bold;
     font-size: 12px;
     border: #323232;
     border-radius: 5px 5px 5px 5px;
-    /* button isn't clickable*/
   }
 
   .shows__button-underline {
@@ -933,7 +907,7 @@ iframe {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 3.5vh;
+    padding-bottom: 3.9vh;
     width: 63%;
   }
 
@@ -1000,7 +974,6 @@ iframe {
   }
 
   .shows__date-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -1011,7 +984,6 @@ iframe {
   }
 
   .shows__venue-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -1021,7 +993,6 @@ iframe {
   }
 
   .shows__location-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -1038,7 +1009,6 @@ iframe {
   .shows__date,
 .shows__venue,
 .shows__location {
-    font-family: "Avenir";
     font-size: 16px;
     color: #AFAFAF;
     margin: 3vh 5vw 2vh 5vw;
@@ -1046,7 +1016,6 @@ iframe {
   }
 
   .shows__date-details {
-    font-family: "Avenir";
     font-size: 14px;
     color: #323232;
     margin-top: 5vh;
@@ -1060,7 +1029,6 @@ iframe {
   }
 
   .shows__venue-details {
-    font-family: "Avenir";
     font-size: 12px;
     color: #323232;
     display: -webkit-box;
@@ -1075,7 +1043,6 @@ iframe {
   }
 
   .shows__location-details {
-    font-family: "Avenir";
     font-size: 12px;
     color: #323232;
     margin-top: 5vh;
@@ -1091,7 +1058,6 @@ iframe {
     margin-top: -10vh;
     background-color: #323232;
     color: #ffffff;
-    font-family: "Avenir";
     font-weight: bold;
     font-size: 12px;
     border: #323232;
@@ -1183,7 +1149,7 @@ iframe {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 3.5vh;
+    padding-bottom: 4.8vh;
     width: 63%;
   }
 
@@ -1229,7 +1195,6 @@ iframe {
   }
 
   .shows__date-details {
-    font-family: "Avenir";
     font-size: 14px;
     color: #323232;
     margin-top: 5vh;
@@ -1243,7 +1208,6 @@ iframe {
   }
 
   .shows__date-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -1254,7 +1218,6 @@ iframe {
   }
 
   .shows__venue-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;
@@ -1264,7 +1227,6 @@ iframe {
   }
 
   .shows__location-tablet {
-    font-family: "Avenir";
     font-size: 12px;
     color: #AFAFAF;
     margin-top: -10vh;

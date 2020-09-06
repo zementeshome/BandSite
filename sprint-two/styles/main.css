@@ -28,8 +28,8 @@ html, body {
   background-color: #323232;
   margin-bottom: 0;
   height: 80px;
+  list-style-type: none;
 }
-
 .header__nav-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +37,6 @@ html, body {
   margin: 0 auto;
   padding-top: 5%;
 }
-
 .header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +46,7 @@ html, body {
           justify-content: center;
   padding-left: 0;
   margin-top: 2vh;
+  list-style-type: none;
 }
 
 .nav__list-item {
@@ -71,11 +71,6 @@ html, body {
   border-bottom: 5px solid #ffffff;
   padding-bottom: 1.5vh;
   text-transform: uppercase;
-  /* i added this effect for the diving deeper section*/
-}
-
-.header__nav .header__nav-list {
-  list-style-type: none;
 }
 
 .nav__list-item .nav__link {
@@ -85,11 +80,9 @@ html, body {
 .hero {
   position: relative;
 }
-
 .hero__overlay {
   position: relative;
 }
-
 .hero__overlay:after {
   content: "";
   position: absolute;
@@ -101,13 +94,11 @@ html, body {
   -webkit-filter: opacity(50%);
           filter: opacity(50%);
 }
-
 .hero__image {
   width: 100%;
   height: 27vh;
   margin-top: 0;
 }
-
 .hero__header {
   position: absolute;
   top: 20%;
@@ -126,13 +117,11 @@ html, body {
   font-size: 24px;
   margin: 4vh 5vw 3vh 5vw;
 }
-
 .about__image {
   width: 90vw;
   margin-left: 5vw;
   margin-right: 5vw;
 }
-
 .about__quote-text {
   color: #323232;
   font-family: "Avenir";
@@ -141,7 +130,6 @@ html, body {
   line-height: 3.5vh;
   margin: 4vh 5vw 3vh 5vw;
 }
-
 .about__quote-author {
   color: #323232;
   font-family: "Avenir";
@@ -149,7 +137,6 @@ html, body {
   font-size: 14.5px;
   margin: 4vh 5vw 6vh 5vw;
 }
-
 .about__autobiography-names {
   color: #323232;
   font-family: "Avenir";
@@ -157,9 +144,7 @@ html, body {
   font-size: 16px;
   margin: 4.5vh 5vw 2vh 5vw;
 }
-
-.about__paragraph-first,
-.about__paragraph-second {
+.about__paragraph-first, .about__paragraph-second {
   color: #323232;
   font-family: "Avenir";
   font-size: 12.2px;
@@ -169,8 +154,8 @@ html, body {
 
 .gallery {
   background-color: #FAFAFA;
+  padding-bottom: 5vh;
 }
-
 .gallery__header {
   color: #323232;
   font-family: "Avenir Next";
@@ -178,7 +163,6 @@ html, body {
   margin: 8vh 5vw 3vh 5vw;
   padding-top: 4vh;
 }
-
 .gallery__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,7 +178,6 @@ html, body {
   filter: gray;
   -webkit-filter: grayscale(100%);
 }
-
 .gallery__image:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
@@ -207,14 +190,6 @@ html, body {
   margin: 8vh 5vw 3vh 5vw;
   padding-top: 4vh;
 }
-
-/*.comments__portrait {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 50%;
-}*/
 .comments__image {
   width: 60px;
   height: 60px;
@@ -222,11 +197,6 @@ html, body {
   margin: 5vh 0vw 0vh 5vw;
 }
 
-/*.comments__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}*/
 form {
   margin-left: 28vw;
   margin-top: -15vh;
@@ -282,6 +252,7 @@ label {
   font-size: 14px;
   margin-left: 1.5vw;
   margin-top: -8.5vh;
+  margin-right: 5vw;
 }
 
 #display2 {
@@ -290,6 +261,7 @@ label {
   font-size: 13px;
   margin-right: 8vw;
   margin-left: 1.5vw;
+  margin-right: 5vw;
 }
 
 ::-webkit-input-placeholder {
@@ -378,7 +350,6 @@ label {
   height: 135%;
   margin-top: 7%;
 }
-
 .footer__header {
   font-size: 40px;
   color: #ffffff;
@@ -387,18 +358,15 @@ label {
   margin-right: 5vw;
   padding-top: 7vh;
 }
-
 .footer__image {
   margin-left: 5vw;
   height: 28px;
   padding-right: 5vw;
   padding-bottom: 3vh;
 }
-
 .footer__logo {
   display: none;
 }
-
 .footer__contact-name {
   color: #ffffff;
   font-family: "Avenir";
@@ -406,7 +374,6 @@ label {
   margin-left: 5vw;
   line-height: 3.5vh;
 }
-
 .footer__contact-address {
   font-family: "Avenir";
   font-size: 14px;
@@ -414,7 +381,6 @@ label {
   margin-left: 5vw;
   line-height: 3.5vh;
 }
-
 .footer__contact-email {
   font-family: "Avenir";
   font-size: 14px;
@@ -423,11 +389,9 @@ label {
   padding-top: 2vh;
   line-height: 3.5vh;
 }
-
 .footer__contact-link {
   text-decoration: none;
 }
-
 .footer__copyright {
   font-family: "Avenir";
   font-size: 14px;

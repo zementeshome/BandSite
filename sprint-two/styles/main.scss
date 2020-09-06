@@ -8,30 +8,34 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 // header
 
-.header__nav {
+.header {
+
+    &__nav {
     background-color: $primary-color;
     margin-bottom: 0;
-    height: 80px;
-}
+    height: 80px; 
+    list-style-type: none;
+    }
 
-.header__nav-logo {
+    &__nav-logo {
     display: flex;
     margin: 0 auto;
-    padding-top: 5%;       
-}
+    padding-top: 5%;
+    }
 
-.header__nav-list {
+    &__nav-list {
     display: flex;
     justify-content: center;
     padding-left: 0;
     margin-top: 2vh;
+    list-style-type: none;
+    }
 }
-
 .nav__list-item {
     padding-bottom: 2vh;
     height: 3.6vh;
@@ -51,11 +55,7 @@ html,body
     color: $font-color;
     border-bottom: 5px solid $font-color;
     padding-bottom: 1.5vh;
-    text-transform: uppercase; /* i added this effect for the diving deeper section*/
-}
-    
-.header__nav .header__nav-list {
-    list-style-type: none;
+    text-transform: uppercase;
 }
     
 .nav__list-item .nav__link {
@@ -66,13 +66,12 @@ html,body
 
 .hero {
     position: relative;
-}
 
-.hero__overlay {
+    &__overlay {
     position: relative;
-}
-    
-.hero__overlay:after {
+    }
+
+    &__overlay:after {
     content:'';
     position:absolute;
     left:0px;
@@ -81,15 +80,15 @@ html,body
     height: 27vh;
     background: rgba(50, 50, 50, 0.5);
     filter: opacity(50%);
-}
-    
-.hero__image {
+    }
+
+    &__image {
     width: 100%;
     height: 27vh;
     margin-top: 0; 
-}
+    }
 
-.hero__header {
+    &__header {
     position: absolute;
     top: 20%;
     left: 5%;
@@ -99,72 +98,76 @@ html,body
     font-family: 'Avenir Next';
     font-weight: bold;
     font-style: normal;
+    }
 }
 
 // about
 
-.about__header {
+.about {
+    
+    &__header {
     color: $primary-color;
     font-family: 'Avenir Next';
     font-size: $header-font-size;
-    margin: 4vh 5vw 3vh 5vw;
-}
+    margin: 4vh 5vw 3vh 5vw; 
+    }
 
-.about__image {
+    &__image {
     width: 90vw;
     margin-left: 5vw;
     margin-right: 5vw;
-}
+    }
 
-.about__quote-text {
+    &__quote-text{
     color: $primary-color;
     font-family: "Avenir";
     font-weight: bold;
     font-size: 16px;
     line-height: 3.5vh;
-    margin: 4vh 5vw 3vh 5vw;
-}
+    margin: 4vh 5vw 3vh 5vw; 
+    }
 
-.about__quote-author {
+    &__quote-author {
     color: $primary-color;
     font-family: "Avenir";
     font-weight: bold;
     font-size: 14.5px;
     margin: 4vh 5vw 6vh 5vw;
-}
+    }
 
-.about__autobiography-names {
+    &__autobiography-names {
     color: $primary-color;
     font-family: "Avenir";
     font-weight: bold;
     font-size: 16px;
     margin: 4.5vh 5vw 2vh 5vw;
-}
+    }
 
-.about__paragraph-first, 
-.about__paragraph-second {
+    &__paragraph-first,
+    &__paragraph-second {
     color: $primary-color;
     font-family: "Avenir";
     font-size: 12.2px;
     margin: 2.5vh 5vw 3vh 5vw;
-    line-height: 3vh;
+    line-height: 3vh;   
+    }
 }
 
 // gallery
 
 .gallery {
     background-color: #FAFAFA;
-}
+    padding-bottom: 5vh;
 
-.gallery__header {
+    &__header {
     color: $primary-color;
     font-family: "Avenir Next";
     font-size: $header-font-size;
     margin: 8vh 5vw 3vh 5vw;
     padding-top: 4vh;
-}
+    }
 
-.gallery__image {
+    &__image {
     display: flex;
     flex-direction: column;
     width: 90vw;
@@ -173,43 +176,33 @@ html,body
     margin-right: 5vw;
     filter: gray;
     -webkit-filter: grayscale(100%);
-}
+    }
 
-.gallery__image:hover {
+    &__image:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
+    }
 }
 
 // comments 
 
-.comments__header {
+.comments {
+
+    &__header {
     color: $primary-color;
     font-family: "Avenir Next";
     font-size: $header-font-size;
     margin: 8vh 5vw 3vh 5vw;
-    padding-top: 4vh;
-}
+    padding-top: 4vh; 
+    }
 
-/*.comments__portrait {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+    &__image {
+    width: 60px; 
+    height: 60px;
     border-radius: 50%;
-}*/
-
-.comments__image {
-        width: 60px; 
-        height: 60px;
-        border-radius: 50%;
-        margin: 5vh 0vw 0vh 5vw;
+    margin: 5vh 0vw 0vh 5vw;
+    }
 }
-
-/*.comments__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}*/
 
 form {
     margin-left: 28vw;
@@ -265,6 +258,7 @@ label {
     font-size: 14px;
     margin-left: 1.5vw;
     margin-top: -8.5vh;
+    margin-right: 5vw;
 }
 
 #display2 {
@@ -273,6 +267,7 @@ label {
     font-size: 13px;
     margin-right:8vw;
     margin-left: 1.5vw;
+    margin-right: 5vw;
 }
 
 ::placeholder {
@@ -329,58 +324,57 @@ label {
     background-color: $primary-color;
     height: 135%;
     margin-top: 7%;
-}
 
-.footer__header {
+    &__header {
     font-size: 40px;
     color: $font-color;
     font-family: "Avenir Next";
     margin-left: 5vw;
     margin-right: 5vw;
     padding-top: 7vh;
-}
+    }
 
-.footer__image {
+    &__image {
     margin-left: 5vw;
     height: 28px;
     padding-right: 5vw;
     padding-bottom: 3vh;
-}
-    
-.footer__logo {
-    display: none;
-}
+    }
 
-.footer__contact-name {
+    &__logo {
+    display: none;   
+    }
+
+    &__contact-name {
     color: $font-color;
     font-family: "Avenir";
     font-size: $footer-font-size;
     margin-left: 5vw;
-    line-height: 3.5vh;
-}
+    line-height: 3.5vh; 
+    }
 
-.footer__contact-address {
+    &__contact-address {
     font-family: "Avenir";
     font-size: $footer-font-size;
     color: $font-color;
     margin-left: 5vw;
     line-height: 3.5vh;
-}
+    }
 
-.footer__contact-email {
+    &__contact-email {
     font-family: "Avenir";
     font-size: $footer-font-size;
     color: $font-color;
     margin-left: 5vw;
     padding-top: 2vh;
-    line-height: 3.5vh;
-}
+    line-height: 3.5vh; 
+    }
 
-.footer__contact-link {
+    &__contact-link {
     text-decoration: none;
-}
+    }
 
-.footer__copyright {
+    &__copyright {
     font-family: "Avenir";
     font-size: $footer-font-size;
     color: $font-color;
@@ -388,6 +382,7 @@ label {
     padding-top: 4vh;
     line-height: 3.5vh;
     width: 70%;
+    }
 }
 
 // media query mobile 375px
