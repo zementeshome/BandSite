@@ -69,7 +69,7 @@ html, body {
 .nav__link:hover {
   color: #ffffff;
   border-bottom: 5px solid #ffffff;
-  padding-bottom: 1.5vh;
+  padding-bottom: 1.6vh;
   text-transform: uppercase;
 }
 
@@ -420,7 +420,7 @@ label {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 1.5vh;
+    padding-bottom: 1.7vh;
   }
 
   .comments__header {
@@ -480,7 +480,7 @@ label {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 1.5vh;
+    padding-bottom: 1.8vh;
   }
 
   form {
@@ -543,6 +543,25 @@ label {
     font-size: 20px;
   }
 
+  #display {
+    font-family: "Avenir";
+    font-weight: bold;
+    color: #323232;
+    font-size: 14px;
+    margin-left: 1vw;
+    margin-top: -8.5vh;
+    margin-right: 5vw;
+  }
+
+  #display2 {
+    font-family: "Avenir";
+    color: #323232;
+    font-size: 13px;
+    margin-right: 8vw;
+    margin-left: 1vw;
+    margin-right: 5vw;
+  }
+
   .footer__copyright {
     width: 55%;
   }
@@ -577,7 +596,7 @@ label {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 3.5vh;
+    padding-bottom: 4vh;
     width: 60%;
   }
 
@@ -857,7 +876,7 @@ label {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 3.5vh;
+    padding-bottom: 3.7vh;
     width: 60%;
   }
 
@@ -1121,7 +1140,7 @@ label {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 3.5vh;
+    padding-bottom: 3.9vh;
     width: 63%;
   }
 
@@ -1302,7 +1321,7 @@ label {
 .nav__link:hover {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    padding-bottom: 3.5vh;
+    padding-bottom: 4.8vh;
     width: 63%;
   }
 

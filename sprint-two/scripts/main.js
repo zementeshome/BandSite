@@ -9,8 +9,6 @@ form.addEventListener('submit', function(e) {
 
 // comments section dom manipulation
 
-//function commentsStyle() {
-
 let main = document.createElement('main');
   main.classList.add('main');
 
@@ -110,13 +108,6 @@ commentsDisplay.appendChild(commentsUnderline4);
 document.body.querySelector('main').appendChild(commentsDisplay);
 
 
-//}
-
-//displayComment()
-
-//}
-// default comments
-
 // let users = [
 //     {
 //         name: 'Michael Lyons',
@@ -137,30 +128,6 @@ document.body.querySelector('main').appendChild(commentsDisplay);
 //     ]
 //   }
 // ];
-// // // added comments 
-
-function commentsStyle() {
-
-  let display = document.createElement('div');
-  display.classList.add('comments__displayed');
-  let underline = document.createElement('span');
-  underline.classList.add('comments__underline');
-  display.appendChild(underline);
-  document.body.querySelector('main').appendChild(display)
-  let profileCircle = document.createElement('div');
-  profileCircle.classList.add('comments__circle');
-  display.appendChild(profileCircle);
-  document.querySelector('main').appendChild(display);
-  let user = document.createElement('h5');
-  user.classList.add('comments__username');
-  display.appendChild(user);
-  document.querySelector('main').appendChild(display);
-  let commentPost = document.createElement('p');
-  commentPost.classList.add('comments__post');
-  display.appendChild(commentPost);
-  document.body.querySelector('main').appendChild(display);
-
-}
 
 function displayComment() {
 
@@ -171,45 +138,3 @@ function displayComment() {
   document.getElementById('comment').value 
 
 };
-
-
-
-// // if (whatever is in here is true, let it run)
-
-// // $(function(){
-// //     // run code when form is submitted
-// //      $('form').on('submit', function(event) {
-// //      // stop page from refreshing
-// //      // event.preventDefault();
-     
-// //      //print value user put in the field
-// //      const comment = $('submit').val();
-// //      // if there is something in the input let it run
-// //      if (comment !== '') {
-// //      // add latest items of the list inside ul
-// //      $('comments__displayed').append(comment);
-// //      $('submit').val(''); 
-// //  }
-// // });
-// // });
-
-
-
-// // $(function(){
-// //     $("#form").submit(function(e){
-// //         // Create data object
-// //         let data = {};
-// //         data.name = $("#name").val();
-// //         data.comment = $("#comment").val();
-// //         // The url of your server-side script that handles the post submission
-// //         let url = "index.html";
-// //         $.POST(url, data)
-// //         .done(function(response){
-// //             // This code executes when the server returns a response
-// //             // Do something with the response like adding the comment to the current list of comments
-// //             // Example (if your response is HTML, better would be a JSON string):
-// //             $("#comments").append(response);
-// //         });
-// //         e.preventDefault();
-// //     });
-// // });
