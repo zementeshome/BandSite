@@ -6,21 +6,43 @@ form.addEventListener('submit', function(e) {
     let recentComment = {}
     recentComment.name = e.target.name.value;
     recentComment.comment = e.target.comment.value;
-    users.unshift(recentComment)
+    users.unshift(recentComment) // users.unshift
     document.querySelector('form').reset()
-    displayComments(users);
+    displayComments(users); // users
 })
 
 // axios sprint 3
 
-// axios.get('https://project-1-api.herokuapp.com/comments/?api_key=60423142-f57d-4f8d-9873-e1ff551f819f')
-// .then(res => displayComments(res.data))
-// // varArray = response.data;
+// let apiURL = ('https://project-1-api.herokuapp.com/comments/?api_key=60423142-f57d-4f8d-9873-e1ff551f819f');
 
-// // console.log(varArray);
-// // })
+// let defaultComments = [];
 
-// let varArray = [];
+// axios.get(apiURL)
+// .then((response) => {
+// defaultComments = response.data;
+// });
+
+// axios.post(apiURL, {
+//   name: 'Zemen Teshome',
+//   comment: 'Hey there',
+//   // timestamp: getDate(),
+// })
+// .then((response) => {
+//   console.log(response.data);
+// },(error) => {
+//   console.log(error);
+// });
+
+// axios.get(apiURL)
+// .then(res => displayComments((res.data)
+//   defaultComments = response.data;
+
+// console.log(varArray);
+
+// axios
+// .post()
+
+// let defaultComments = [];
 // varArray.push(response);
 
 let users = [
@@ -43,6 +65,18 @@ let users = [
       
   }
 ];
+
+function getDate() {
+  let time = document.querySelector('.comments__date')
+  time.firstChild.nodeValue = new Date().toLocaleDateString(undefined, {
+    month : '2-digit',  
+    day : '2-digit',
+    year : 'numeric'
+  })
+  
+  }
+  document.body.addEventListener('submit', getDate);
+
 
 function displayComments(commentsArray) {
   document.querySelector('.comments__container-posted').innerHTML = '';
@@ -86,5 +120,6 @@ function displayComments(commentsArray) {
     document.body.querySelector('.comments__container-posted').appendChild(commentsDisplay);
 }
 
+// displayComments(defaultComments);
 displayComments(users);
 
