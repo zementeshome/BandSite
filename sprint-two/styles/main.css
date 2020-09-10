@@ -304,6 +304,10 @@ label {
   padding-top: 1.5vh;
 }
 
+.comments__container-posted {
+  width: 100%;
+}
+
 .comments__underline {
   display: inline-block;
   border-bottom: 2px solid #E1E1E1;
