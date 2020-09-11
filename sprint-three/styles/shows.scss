@@ -383,8 +383,8 @@ iframe {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        margin-top: 15vh;
-        margin-bottom: 0;
+        margin-top: 5vh;
+        margin-bottom: -2vh;
     }
 
      .shows__header2 {
@@ -407,9 +407,9 @@ iframe {
         font-family: 'Avenir Next';
         width: 127.33px;
         height: 50px;
-        margin-top: -5vh;
+        margin-top: 4vh;
         margin-left: 5vw;
-        margin-bottom: -5vh;
+        margin-bottom: 0.5vh;
         margin-right: 60vw;
         
     }
@@ -421,7 +421,7 @@ iframe {
         display: inline-block;
         margin-left: 5vw;
         margin-right:20vw;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     .shows__venue-tablet {
@@ -430,7 +430,7 @@ iframe {
         margin-top: -10vh;
         display: inline-block;
         margin-right: 12vw;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     .shows__location-tablet {
@@ -439,7 +439,7 @@ iframe {
         margin-top: -10vh;
         display: inline-block;
         margin-right: 20vw;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     .shows__button {
@@ -458,7 +458,7 @@ iframe {
 .shows__date-details {
     font-size: 18px;
     color: $primary-color;
-    margin-top: 5vh;
+    margin-top: 2vh;
     font-weight: bold;
     display: flex;
     width: 153.6px;
@@ -468,7 +468,7 @@ iframe {
     font-size: 15px;
     color: $primary-color;
     display: flex;
-    margin-top: 5vh;
+    margin-top: 2vh;
     margin-left: 2vw;
     margin-right: 0;
     display: flex;
@@ -478,7 +478,7 @@ iframe {
 .shows__location-details {
     font-size: 15px;
     color: $primary-color;
-    margin-top: 5vh;
+    margin-top: 2vh;
     display: flex;
 }
 
@@ -657,7 +657,7 @@ iframe {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        margin-top: 15vh;
+        margin-top: -1vh;
         margin-bottom: 0;
     }
 
@@ -681,8 +681,8 @@ iframe {
         font-family: 'Avenir Next';
         width: 127.33px;
         height: 50px;
-        margin-top: -5vh;
-        margin-left: 5vw;
+        margin-top: 8vh;
+        margin-left: 6.5vw;
         margin-bottom: -5vh;
         margin-right: 60vw;
         
@@ -703,7 +703,7 @@ iframe {
         color: #AFAFAF;
         margin-top: -10vh;
         display: inline-block;
-        margin-right: 12vw;
+        margin-right: 11.5vw;
         margin-top: -5vh;
     }
 
@@ -738,6 +738,7 @@ iframe {
     width: 153.6px;
     height: 25px;
     margin-left: 25vw;
+    margin-bottom: 1vh;
 }
 .shows__venue-details {
     font-size: 12px;
@@ -758,7 +759,7 @@ iframe {
 }
 
 .shows__button {
-    height: 48px;
+    height: 45px;
     width: 125px;
     margin-left: 75vw;
     margin-top: -10vh;
@@ -773,7 +774,7 @@ iframe {
 .shows__button-underline {
     display: inline-block;
     border-bottom: 2px solid #E1E1E1;
-    margin: 1.5vh 5vw 1vh 5vw;
+    margin: 0.5vh 5vw 1vh 5vw;
     width: 90%;
     display: flex;
     margin-left: 25vw;
@@ -903,7 +904,7 @@ iframe {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        margin-top: 15vh;
+        margin-top: -1vh;
         margin-bottom: 0;
     }
 
@@ -914,7 +915,7 @@ iframe {
         font-family: 'Avenir Next';
         width: 127.33px;
         height: 50px;
-        margin-top: -5vh;
+        margin-top: 8vh;
         margin-left: 10vw;
         margin-bottom: -5vh;
         margin-right: 60vw;
@@ -951,7 +952,7 @@ iframe {
 
     .shows__button {
         width: 200px;
-        height: 25px;
+        height: 20px;
     }
 
     .shows__date,
@@ -992,7 +993,7 @@ iframe {
 }
 
 .shows__button {
-    height: 45px;
+    height: 40px;
     width: 135px;
     margin-left: 75vw;
     margin-top: -10vh;
@@ -1007,7 +1008,7 @@ iframe {
 .shows__button-underline {
     display: inline-block;
     border-bottom: 2px solid #E1E1E1;
-    margin: 1.5vh 5vw 1vh 5vw;
+    margin: 0.5vh 5vw 1vh 5vw;
     width: 90%;
     display: flex;
     margin-left: 28vw;
@@ -1127,21 +1128,31 @@ iframe {
 
     .shows__info {
         margin-bottom: 5vh;
+        margin-top: -3vh;
     }
 
     .shows__header {
         margin-left: 15vw;
+        margin-top: 7vh;
     }
 
     .shows__date-details {
         font-size: 14px;
         color: $primary-color;
-        margin-top: 5vh;
+        margin-top: 3vh;
         font-weight: bold;
         display: flex;
         width: 153.6px;
         height: 25px;
         margin-left: 31vw;
+    }
+
+    .shows__venue-details  {
+        margin-top: 3vh;
+    }
+
+    .shows__location-details {
+        margin-top: 3vh;
     }
 
     .shows__date-tablet {
@@ -1175,7 +1186,7 @@ iframe {
     .shows__button-underline {
         display: inline-block;
         border-bottom: 2px solid #E1E1E1;
-        margin: 1.5vh 5vw 1vh 5vw;
+        margin: 0.5vh 5vw 1vh 5vw;
         width: 90%;
         display: flex;
         margin-left: 31vw;

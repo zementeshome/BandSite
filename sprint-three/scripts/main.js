@@ -6,65 +6,58 @@ form.addEventListener('submit', function(e) {
     let recentComment = {}
     recentComment.name = e.target.name.value;
     recentComment.comment = e.target.comment.value;
-    users.unshift(recentComment) // users.unshift
+    defaultComments.push
+    // defaultComments.unshift(recentComment) // users.unshift
     document.querySelector('form').reset()
-    displayComments(users); // users
+    displayComments(defaultComments); // users
 })
 
 // axios sprint 3
 
-// let apiURL = ('https://project-1-api.herokuapp.com/comments/?api_key=60423142-f57d-4f8d-9873-e1ff551f819f');
+let apiURL = ('https://project-1-api.herokuapp.com/comments/?api_key=60423142-f57d-4f8d-9873-e1ff551f819f');
 
-// let defaultComments = [];
+let defaultComments = [];
 
-// axios.get(apiURL)
-// .then((response) => {
-// defaultComments = response.data;
-// });
+axios.get(apiURL)
+.then((response) => {
+defaultComments = response.data;
+});
+// console.log(defaultComments)
 
-// axios.post(apiURL, {
-//   name: 'Zemen Teshome',
-//   comment: 'Hey there',
-//   // timestamp: getDate(),
-// })
-// .then((response) => {
-//   console.log(response.data);
-// },(error) => {
-//   console.log(error);
-// });
+getUsersInfo();
 
-// axios.get(apiURL)
-// .then(res => displayComments((res.data)
-//   defaultComments = response.data;
+axios.post(apiURL, {
+  name: 'Zemen Teshome',
+  comment: 'Hey there',
+  // timestamp: getDate(),
+})
+.then((response) => {
+  console.log(response.data);
+},(error) => {
+  console.log(error);
+});
 
-// console.log(varArray);
 
-// axios
-// .post()
-
-// let defaultComments = [];
-// varArray.push(response);
-
-let users = [
-    {
-        name: 'Michael Lyons',
-        timestamp: '12/18/2018',
-        comment: 'They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.',
+// let users = [
+//     {
+//         name: 'Michael Lyons',
+//         timestamp: '12/18/2018',
+//         comment: 'They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.',
    
-},
-    {
-        name: 'Gary Wong',
-        timestamp: '12/12/2018',
-        comment: 'Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!',
+// },
+//     {
+//         name: 'Gary Wong',
+//         timestamp: '12/12/2018',
+//         comment: 'Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!',
     
-},
-    {
-        name: 'Theodore Duncan',
-        timestamp: '11/15/2018',
-        comment: 'How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!',
+// },
+//     {
+//         name: 'Theodore Duncan',
+//         timestamp: '11/15/2018',
+//         comment: 'How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!',
       
-  }
-];
+//   }
+// ];
 
 function getDate() {
   let time = document.querySelector('.comments__date')
@@ -120,6 +113,6 @@ function displayComments(commentsArray) {
     document.body.querySelector('.comments__container-posted').appendChild(commentsDisplay);
 }
 
-// displayComments(defaultComments);
-displayComments(users);
+displayComments(defaultComments);
+// displayComments(users);
 
