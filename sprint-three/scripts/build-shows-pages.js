@@ -1,9 +1,6 @@
 
 //shows header array 
 
-
-let apiURL = ('https://project-1-api.herokuapp.com/showdates/?api_key=bb318ef9-e40b-4118-b16d-03eabed8d71b');
-
 let showsTitle = [
   {
     header:'Shows',
@@ -45,6 +42,7 @@ let subHeadings = [
     tabletlocation: 'LOCATION',
   }
 ]
+
 //shows sub headings array tablet, desktop
 
 function displaySubs(subsArray) {
@@ -79,62 +77,23 @@ document.body.querySelector('div').appendChild(showsInfo);
 }
 displaySubs(subHeadings)
 
-// shows table array
+// GET show dates
 
-let showsTable = [
-  {
-      dateheader: 'DATE',
-      venueheader: 'VENUE',
-      locationheader: 'LOCATION',
- 
-},
-  {
-      dateheader: 'DATE',
-      venueheader: 'VENUE',
-      locationheader: 'LOCATION',
-  
-},
-  {
-      dateheader: 'DATE',
-      venueheader: 'VENUE',
-      locationheader: 'LOCATION',
+let apiURL = ('https://project-1-api.herokuapp.com/showdates/?api_key=bb318ef9-e40b-4118-b16d-03eabed8d71b');
+
+window.onload = generateShowsTable()
+
+function displayShows() {
     
-},
-
-  {
-      dateheader: 'DATE',
-      venueheader: 'VENUE',
-      locationheader: 'LOCATION',
-  
-},
-
-{
-      dateheader: 'DATE',
-      venueheader: 'VENUE',
-      locationheader: 'LOCATION',
-
-},
-
-{
-      dateheader: 'DATE',
-      venueheader: 'VENUE',
-      locationheader: 'LOCATION',
-
-}
-];
-
-function displayShows(showsArray) {
-  showsArray.forEach(shows => {
-    generateShowsTable(shows);
-  })
+  generateShowsTable();
     
 }
 
-function generateShowsTable(showsListings) {
+function generateShowsTable() {
 
-  axios.get(apiURL)
+      axios.get(apiURL)
       .then(response => {
-    response.data.forEach((response) => {
+      response.data.forEach((response) => {
 
   let showsInfo = document.createElement('div');
   showsInfo.classList.add('shows__info');
@@ -142,7 +101,7 @@ function generateShowsTable(showsListings) {
   let showsDate = document.createElement('h3');
   showsDate.classList.add('shows__date');
   console.log(showsDate);
-  showsDate.innerText = showsListings.dateheader;
+  showsDate.innerText = 'DATE';
   showsInfo.appendChild(showsDate);
   document.body.querySelector('div').appendChild(showsInfo);
 
@@ -154,7 +113,7 @@ function generateShowsTable(showsListings) {
 
   let showsVenue = document.createElement('h3');
   showsVenue.classList.add('shows__venue');
-  showsVenue.innerText = showsListings.venueheader;
+  showsVenue.innerText = 'VENUE';
   showsInfo.appendChild(showsVenue);
   document.body.querySelector('div').appendChild(showsInfo);
 
@@ -166,7 +125,7 @@ function generateShowsTable(showsListings) {
 
   let showsLocation = document.createElement('h3');
   showsLocation.classList.add('shows__location');
-  showsLocation.innerText = showsListings.locationheader;
+  showsLocation.innerText = 'LOCATION';
   showsInfo.appendChild(showsLocation);
   document.body.querySelector('div').appendChild(showsInfo);
 
@@ -193,4 +152,3 @@ function generateShowsTable(showsListings) {
   console.log(error)
 })
 }
-  displayShows(showsTable)
