@@ -1,6 +1,9 @@
 
 //shows header array 
 
+
+let apiURL = ('https://project-1-api.herokuapp.com/showdates/?api_key=bb318ef9-e40b-4118-b16d-03eabed8d71b');
+
 let showsTitle = [
   {
     header:'Shows',
@@ -80,72 +83,58 @@ displaySubs(subHeadings)
 
 let showsTable = [
   {
-      date: 'DATE',
-      dateinfo: 'Mon Dec 17 2018',
-      venue: 'VENUE',
-      venueinfo: 'Ronald Lane',
-      location: 'LOCATION',
-      locationinfo: 'San Francisco, CA',
+      dateheader: 'DATE',
+      venueheader: 'VENUE',
+      locationheader: 'LOCATION',
  
 },
   {
-      date: 'DATE',
-      dateinfo: 'Tue Jul 18 2019',
-      venue: 'VENUE',
-      venueinfo: 'Pier 3 East',
-      location: 'LOCATION',
-      locationinfo: 'San Francisco, CA',
+      dateheader: 'DATE',
+      venueheader: 'VENUE',
+      locationheader: 'LOCATION',
   
 },
   {
-      date: 'DATE',
-      dateinfo: 'Fri Jul 22 2019',
-      venue: 'VENUE',
-      venueinfo: 'View Loungue',
-      location: 'LOCATION',
-      locationinfo: 'San Francisco, CA',
+      dateheader: 'DATE',
+      venueheader: 'VENUE',
+      locationheader: 'LOCATION',
     
 },
 
   {
-      date: 'DATE',
-      dateinfo: 'Sat Aug 12 2019',
-      venue: 'VENUE',
-      venueinfo: 'Hyatt Agency',
-      location: 'LOCATION',
-      locationinfo: 'San Francisco, CA',
+      dateheader: 'DATE',
+      venueheader: 'VENUE',
+      locationheader: 'LOCATION',
   
 },
 
 {
-      date: 'DATE',
-      dateinfo: 'Fri Sep 05 2019',
-      venue: 'VENUE',
-      venueinfo: 'Moscow Center',
-      location: 'LOCATION',
-      locationinfo: 'San Francisco, CA',
+      dateheader: 'DATE',
+      venueheader: 'VENUE',
+      locationheader: 'LOCATION',
 
 },
 
 {
-      date: 'DATE',
-      dateinfo: 'Wed Aug 11 2019',
-      venue: 'VENUE',
-      venueinfo: 'Pres Club',
-      location: 'LOCATION',
-      locationinfo: 'San Francisco, CA',
+      dateheader: 'DATE',
+      venueheader: 'VENUE',
+      locationheader: 'LOCATION',
 
 }
 ];
 
 function displayShows(showsArray) {
   showsArray.forEach(shows => {
-    
-    generateShowsTable(shows)
+    generateShowsTable(shows);
   })
+    
 }
 
 function generateShowsTable(showsListings) {
+
+  axios.get(apiURL)
+      .then(response => {
+    response.data.forEach((response) => {
 
   let showsInfo = document.createElement('div');
   showsInfo.classList.add('shows__info');
@@ -153,37 +142,37 @@ function generateShowsTable(showsListings) {
   let showsDate = document.createElement('h3');
   showsDate.classList.add('shows__date');
   console.log(showsDate);
-  showsDate.innerText = showsListings.date;
+  showsDate.innerText = showsListings.dateheader;
   showsInfo.appendChild(showsDate);
   document.body.querySelector('div').appendChild(showsInfo);
 
   let showsDateDetails = document.createElement('p');
   showsDateDetails.classList.add('shows__date-details');
-  showsDateDetails.innerText = showsListings.dateinfo;
+  showsDateDetails.innerText = response.date;
   showsInfo.appendChild(showsDateDetails);
   document.body.querySelector('div').appendChild(showsInfo);
 
   let showsVenue = document.createElement('h3');
   showsVenue.classList.add('shows__venue');
-  showsVenue.innerText = showsListings.venue;
+  showsVenue.innerText = showsListings.venueheader;
   showsInfo.appendChild(showsVenue);
   document.body.querySelector('div').appendChild(showsInfo);
 
   let showsVenueDetails = document.createElement('p')
   showsVenueDetails.classList.add('shows__venue-details');
-  showsVenueDetails.innerText = showsListings.venueinfo;
+  showsVenueDetails.innerText = response.place;
   showsInfo.appendChild(showsVenueDetails);
   document.body.querySelector('div').appendChild(showsInfo);
 
   let showsLocation = document.createElement('h3');
   showsLocation.classList.add('shows__location');
-  showsLocation.innerText = showsListings.location;
+  showsLocation.innerText = showsListings.locationheader;
   showsInfo.appendChild(showsLocation);
   document.body.querySelector('div').appendChild(showsInfo);
 
   let showsLocationDetails = document.createElement('p');
   showsLocationDetails.classList.add('shows__location-details');
-  showsLocationDetails.innerText = showsListings.locationinfo;
+  showsLocationDetails.innerText = response.location;
   showsInfo.appendChild(showsLocationDetails);
   document.body.querySelector('div').appendChild(showsInfo);
 
@@ -197,6 +186,11 @@ function generateShowsTable(showsListings) {
   showsButtonUnderline.classList.add('shows__button-underline');
   showsInfo.appendChild(showsButtonUnderline);
   document.body.querySelector('div').appendChild(showsInfo);
-  }
-
+  
+})
+})
+  .catch(error => {
+  console.log(error)
+})
+}
   displayShows(showsTable)

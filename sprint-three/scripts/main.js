@@ -1,44 +1,57 @@
 // comments section
 
 const form = document.querySelector('form');
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function(e){
     e.preventDefault();
     axios.post(apiURL, {
       name: form.name.value,
       comment: form.comment.value
     })
     .then((response) => {
-      displayComments()
+      clearComments()
+      generateComment()
       console.log(response.data);
     },(error) => {
       console.log(error);
     });
-    defaultComments.unshift
+    // emptyInput()
     document.querySelector('form').reset()
-    // displayComments(defaultComments); // users
 })
-
-// parentfunction
 
 // axios sprint 3
 
-let apiURL = ('https://project-1-api.herokuapp.com/comments/?api_key=60423142-f57d-4f8d-9873-e1ff551f819f');
+let apiURL = ('https://project-1-api.herokuapp.com/comments/?api_key=bb318ef9-e40b-4118-b16d-03eabed8d71b');
 
 let defaultComments = [];
 
+// function emptyInput() {
+//   let x;
+//   let y;
+//   x = document.getElementById('name').value;
+//   y = document.getElementById('comment').value; {
+//     if (x + y == "") {
+//       alert('enter a valid name and comment');
+//       return false;
+//     };
+//   }
+
 window.onload = generateComment()
 
-function displayComments() {
-  document.querySelector('.comments__container-posted').innerHTML = '';
-    generateComment();
+function clearComments() {
+  let removeComment = document.querySelector('.comments__container-posted');
+  while (removeComment.firstChild) {
+  removeComment.removeChild(removeComment.firstChild);
+    }
   }
 
   function generateComment() {
 
     axios.get(apiURL)
       .then(response => {
-    response.data.forEach((response) => {
-
+      response.data.sort(function (a, b) {
+      return a.timestamp - b.timestamp
+    }).reverse().forEach((response) => {
+      // console.log('comment')
     let commentsDisplay = document.createElement('div');
     commentsDisplay.classList.add('comments__displayed');
 
@@ -72,13 +85,21 @@ function displayComments() {
     
     let time = new Date(response.timestamp); 
     timestamp.innerText = time.toLocaleDateString();
-})
-})
-  .catch(error => {
-    console.log(error)
-  })
-  } 
 
-displayComments(defaultComments);
-// displayComments(users);
+})
+})
+    .catch(function (error) {
+      if (error.response) {
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      }
+    })
+    // .catch(function (error) {
+    //   console.log(error.toJSON());
+    // })
+  // .catch(error => {
+  //   console.log(error)
+  // })
+  } 
 
