@@ -11,7 +11,6 @@ form.addEventListener('submit', function(e){
     axios.post(
       apiURL, config)
     .then((response) => {
-      // debugger
       clearComments()
       generateComment()
       console.log(response.data);
