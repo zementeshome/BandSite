@@ -1176,14 +1176,14 @@ label {
 
   .about__quote-text {
     margin-left: 20vw;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 2rem;
-    margin-right: 25vw;
+    margin-right: 20vw;
   }
 
   .about__quote-author {
     margin-left: 20vw;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .about__autobiography-names {
