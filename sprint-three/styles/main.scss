@@ -9,6 +9,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: 'Avenir';
 }
 // styles for mobile 320px
 
@@ -21,6 +22,7 @@ html,body
     margin-bottom: 0;
     height: 80px; 
     list-style-type: none;
+
     }
 
     &__nav-logo {
@@ -28,11 +30,11 @@ html,body
     margin: 0 auto;
     padding-top: 5%;
 
-    // @mixin tablet {
-    //     margin-left: 4%;
-    //     padding-top: 4%;
-    // }
+    @include tablet {
+        margin-left: 4%;
+        padding-top: 4%;
     }
+  }
 
     &__nav-list {
     display: flex;
@@ -49,26 +51,26 @@ html,body
         margin-top: 0.5rem; 
     }
 
-    // @mixin tablet {
-    //     width: 100%;
-    //     margin-top: 0;
-    //     margin-bottom: 0;
-    //     margin-left: 1vw;
-    // }
+    @include tablet {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 1vw;
     }
+ }
 }
 .nav__list-item {
     padding-bottom: 1.3rem;
     height: 1.3rem;
     width: 100%;
 
-    // @mixin tablet {
-    //     padding-bottom: 0;
-    //     margin-top: -2%;
-    //     width: 18%;
-    //     margin-right: 9vw;
-    //     padding-left: 1vw;
-    // }
+    @include tablet {
+        padding-bottom: 0;
+        margin-top: -2%;
+        width: 18%;
+        margin-right: 9vw;
+        padding-left: 1vw;
+    }
 }
 
 .nav__list-item--active {
@@ -83,16 +85,15 @@ html,body
         width: 100%;
     }
 
-    // @mixin tablet {
-    //     padding-bottom: 1.2rem;
-    //     width: 10%;
-    // }
+    @include tablet {
+        padding-bottom: 1.2rem;
+        width: 10%;
+    }
 }
 
 .nav__link {
     display: flex;
     padding: 0 18vw 2rem 15vw;
-    font-family: 'Avenir';
     font-size: 14px;
     color: #E1E1E1;
 
@@ -104,10 +105,10 @@ html,body
         padding: 0 11vw 1.5rem 17vw;
     } 
 
-    // @mixin tablet {
-    //     padding: 0;
-    //     font-size: 14px; 
-    // }
+    @include tablet {
+        padding: 0;
+        font-size: 14px; 
+    }
 }
     
 
@@ -139,10 +140,10 @@ html,body
     background: rgba(50, 50, 50, 0.5);
     filter: opacity(50%);
 
-    // @mixin tablet {
-    //     height: 400px;
-    //     max-height: 800px;
-    // }
+    @include tablet {
+        height: 400px;
+        max-height: 800px;
+    }
     }
 
     &__image {
@@ -151,10 +152,10 @@ html,body
     max-height: 183px;
     margin-top: 0; 
 
-    // @mixin tablet {
-    //     height: 400px;
-    //     max-height: 800px; 
-    // }
+    @include tablet {
+        height: 400px;
+        max-height: 800px; 
+    }
     }
 
     &__header {
@@ -173,16 +174,15 @@ html,body
         line-height: 2.4rem;
     }
 
-    // @mixin tablet {
-    //     position: absolute;
-    //     top: 15%;
-    //     left: 4%;
-    //     font-size: 60px;
-    //     line-height: 5rem;
-    // }
+    @include tablet {
+        position: absolute;
+        top: 15%;
+        left: 4%;
+        font-size: 60px;
+        line-height: 5rem;
     }
+ }
 }
-
 // about
 
 .about {
@@ -193,10 +193,10 @@ html,body
     font-size: $header-font-size;
     margin: 1.5rem 5vw 1rem 5vw; 
 
-    // @mixin tablet {
-    //     font-size: 35.5px;
-    //     margin: 2.5rem 5vw 2rem 4vw;
-    // }
+    @include tablet {
+        font-size: 35.5px;
+        margin: 2.5rem 5vw 2rem 4vw;
+    }
     }
 
     &__image {
@@ -204,77 +204,77 @@ html,body
     margin-left: 5vw;
     margin-right: 5vw;
 
-    // @mixin tablet {
-    //     width: 92vw;
-    //     margin-left: 4vw;  
-    // }
+    @include tablet {
+        width: 92vw;
+        margin-left: 4vw;  
+    }
     }
 
     &__quote-text{
     color: $primary-color;
-    font-family: "Avenir";
+    font-family: 'Avenir Next';
     font-weight: bold;
     font-size: 16px;
     line-height: 3.5vh;
     margin: 1.5rem 5vw 1rem 5vw; 
 
-    // @mixin tablet {
-    //     font-size: 23.5px;
-    //     line-height: 6vh;
-    //     margin: 2.5rem 7vw 1rem 4vw;
-    // }
+    @include tablet {
+        font-size: 23.5px;
+        line-height: 6vh;
+        margin: 2.5rem 7vw 1rem 4vw;
+    }
     }
 
     &__quote-author {
     color: $primary-color;
-    font-family: "Avenir";
     font-weight: bold;
     font-size: 14.5px;
     margin: 1.5rem 5vw 2rem 5vw;
 
-    // @mixin tablet {
-    //     font-size: 20px;
-    //     margin: 2rem 5vw 2.5rem 3.5vw;
-    // }
+    @include tablet {
+        font-size: 20px;
+        margin: 2rem 5vw 2.5rem 3.5vw;
+    }
     }
 
     &__autobiography-names {
+    font-family: 'Avenir Next';
     color: $primary-color;
-    font-family: "Avenir";
     font-weight: bold;
     font-size: 16px;
     margin: 1.5rem 5vw 0.5rem 5vw;
 
-    // @mixin tablet {
-    //     font-size: 25px;
-    //     margin: 3rem 5vw 0vh 3.5vw;
-    // }
+    @include tablet {
+        font-size: 25px;
+        margin: 3rem 5vw 0vh 3.5vw;
+    }
     }
 
     &__box {
+        @include tablet {
             display: flex;
             justify-content: center;
     }
 
+}
+
     &__paragraph-first,
     &__paragraph-second {
     color: $primary-color;
-    font-family: "Avenir";
     font-size: 12.2px;
     margin: 0.7rem 5vw 1rem 5vw;
     line-height: 1.3rem;   
 
-    // @mixin tablet {
-    //     display: flex;
-    //     font-size: 14.2px;
-    //     line-height: 1.5rem;
-    //     margin-left: 3.5vw;
-    //     margin-right: 2.5vw;
-    //     margin-top: 1rem;  
-    // }
+    @include tablet {
+        display: flex;
+        font-size: 14.2px;
+        line-height: 1.5rem;
+        margin-left: 3.5vw;
+        margin-right: 2.5vw;
+        margin-top: 1rem;  
     }
+  }
 }
-
 // gallery
 
 .gallery {
@@ -288,15 +288,17 @@ html,body
     margin: 8vh 5vw 3vh 5vw;
     padding-top: 4vh;
 
-    // @mixin tablet {
-    //     font-size: 35px;
-    //     padding-top: 2.5rem;
-    //     margin-bottom: 3rem;
-    //     margin-left: 3.5vw;
-    // }
+    @include tablet {
+        font-size: 35px;
+        padding-top: 2.5rem;
+        margin-bottom: 3rem;
+        margin-left: 3.5vw;
     }
+  }
 
     &__layout {
+
+        @include tablet {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -304,6 +306,8 @@ html,body
             margin-left: 2vw;
             margin-right: 2vw;
     }
+
+}
 
     &__image {
     display: flex;
@@ -315,20 +319,19 @@ html,body
     filter: gray;
     -webkit-filter: grayscale(100%);
 
-    // @mixin tablet {
-    //     width: 29vw;
-    //     margin-bottom: 3vh;
-    //     margin: 0 auto;
-    //     margin-bottom: 4vh;
-    // }
+    @include tablet {
+        width: 29vw;
+        margin-bottom: 3vh;
+        margin: 0 auto;
+        margin-bottom: 4vh;
+    }
     }
 
     &__image:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
     }
-}
-
+ }
 // comments 
 
 .comments {
@@ -348,9 +351,9 @@ html,body
         font-size: 32px;
     }
 
-    // @mixin tablet {
-    //     font-size: 35px; 
-    // }
+    @include tablet {
+        font-size: 35px; 
+    }
     }
 
     &__image {
@@ -359,12 +362,12 @@ html,body
     border-radius: 50%;
     margin: 1rem 0vw 0rem 5vw;
     
-    // @mixin tablet {
-    //     margin-left: 15vw; 
-    // }
-
+    @include tablet {
+        margin-left: 15vw; 
     }
+  }
 }
+
 
 form {
     margin-left: 28vw;
@@ -378,13 +381,12 @@ form {
         margin-left: 23vw;
     }
 
-    // @mixin tablet {
-    //     margin-left: 25vw;
-    // }
+    @include tablet {
+        margin-left: 25vw;
+    }
 }
 
 label {
-    font-family: 'Avenir';
     font-size: 16px;
     color: #AFAFAF;
     font-weight: bold;
@@ -409,10 +411,10 @@ label {
         height: 50px;
     }
 
-    // @mixin tablet {
-    //     height: 45px;
-    //     width: 430px;
-    // }
+    @include tablet {
+        height: 45px;
+        width: 430px;
+    }
 }
 
 #comment {
@@ -433,12 +435,12 @@ label {
         height: 120px;
     }
 
-    // @mixin tablet {
-    //     height: 110px;
-    //     width: 430px;
-    //     margin-top: 0.2rem;
-    //     margin-bottom: 4rem;
-    // }
+    @include tablet {
+        height: 110px;
+        width: 430px;
+        margin-top: 0.2rem;
+        margin-bottom: 4rem;
+    }
 }
 
 #submit {
@@ -449,11 +451,11 @@ label {
     border: 2px solid #323232;
     background-color: $primary-color;
     color: $font-color;
-    font-family: 'Avenir';
     font-weight: bold;
     font-size: 15px;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    font-family: 'Avenir';
 
     @include mobile-medium {
         width: 256px;
@@ -464,21 +466,21 @@ label {
         height: 50px;
     }
 
-    // @mixin tablet {
-    //     height: 50px;
-    //     width: 209px;
-    //     margin-top: 5rem;
-    //     margin-bottom: 1.5rem;
-    //     margin-left: -28vw; 
-    // }
+    @include tablet {
+        height: 50px;
+        width: 209px;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        margin-left: -28vw; 
+    }
 }
 
 ::placeholder {
-    font-family: 'Avenir';
     font-size: 15px;
     color: $primary-color;
     padding-left: 3vw;
     padding-top: 0.5rem;
+    font-family: 'Avenir';
 
     @include mobile-medium {
         font-size: 17px;
@@ -488,11 +490,11 @@ label {
         font-size: 20px;
     }
 
-    // @mixin tablet {
-    //     font-size: 18px;
-    //     padding-left: 2vw;
-    //     padding-top: 0.8rem;
-    // }
+    @include tablet {
+        font-size: 18px;
+        padding-left: 2vw;
+        padding-top: 0.8rem;
+    }
 }
 
 .comments__container-posted {
@@ -504,10 +506,10 @@ label {
     margin: 0.5rem 5vw 0.5rem 5vw;
     width: 90%;
 
-    // @mixin tablet {
-    //     margin: -1rem 5vw 0.7rem 14vw;
-    //     width: 67%;
-    // }
+    @include tablet {
+        margin: -1rem 5vw 0.7rem 14vw;
+        width: 67%;
+    }
 }
 
 .comments__circle {
@@ -517,14 +519,13 @@ label {
     background-color: #E1E1E1;
     margin: 0.8rem 0vw 0vh 5vw;
 
-    // @mixin tablet {
-    //     margin: 0.5rem 0vw 0vh 14vw; 
-    // }
+    @include tablet {
+        margin: 0.5rem 0vw 0vh 14vw; 
+    }
 
 }
 
 .comments__username {
-    font-family: 'Avenir';
     font-weight: bold;
     color: $primary-color;
     font-size: 14px;
@@ -536,14 +537,13 @@ label {
         margin-top: -3rem;
     }
 
-    // @mixin tablet {
-    //     font-size: 16px;
-    //     margin-left: 23vw;
-    //     margin-top: -3rem; 
-    // }
+    @include tablet {
+        font-size: 16px;
+        margin-left: 23vw;
+        margin-top: -3rem; 
+    }
 }
 .comments__date{
-    font-family: 'Avenir';
     color: #AFAFAF;
     font-size: 14px;
     margin-left: 75vw;
@@ -554,15 +554,15 @@ label {
         margin-left: 80vw;
     }
 
-    // @mixin tablet {
-    //     font-size: 16px;
-    //     margin-left: 42vw;
-    //     margin-right: 5vw;
-    //     margin-top: -3rem;
-    // }
+    @include tablet {
+        font-size: 16px;
+        margin-left: 42vw;
+        margin-right: 5vw;
+        margin-top: -3rem;
+    }
+
 }
 .comments__post {
-    font-family: 'Avenir';
     color: $primary-color;
     font-size: 13px;
     margin-right:8vw;
@@ -572,11 +572,11 @@ label {
         margin-left: 22vw;
     }
 
-    // @mixin tablet {
-    //     font-size: 14px;
-    //     margin-right:18vw;
-    //     margin-left: 23vw; 
-    // }
+    @include tablet {
+        font-size: 14px;
+        margin-right:18vw;
+        margin-left: 23vw; 
+    }
 
 }
 
@@ -584,13 +584,13 @@ label {
 
 .footer {
     background-color: $primary-color;
-    height: 135%;
+    height: 130%;
     margin-top: 7%;
 
-    // @mixin tablet {
-    //     height: 68%;
-    //     margin-top: 2%;
-    // }
+    @include tablet {
+        height: 68%;
+        margin-top: 2%;
+    }
 
     &__header {
     font-size: 40px;
@@ -600,25 +600,29 @@ label {
     margin-right: 5vw;
     padding-top: 3.2rem;
 
-    // @mixin tablet {
-    //     padding-top: 1rem;
-    //     margin-bottom: 0;
-    //     margin-right: 0;
-    //     width: 300px;
-    //     margin-left: 3.5vw;
-    //     font-size: 38px;
-    // }
+    @include tablet {
+        padding-top: 1rem;
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 300px;
+        margin-left: 3.5vw;
+        font-size: 38px;
+    }
     }
 
     &__container {
-            display: inline-block;  
+            @include tablet {
+            display: inline-block; 
+         } 
         }
 
     &__social {
+        @include tablet {
             margin-left: 40vw;
             margin-top: -2.3rem;
             width: 400px; 
-    }
+          }
+        }
 
     &__image {
     margin-left: 5vw;
@@ -626,60 +630,63 @@ label {
     padding-right: 5vw;
     padding-bottom: 1rem;
 
-    // @mixin tablet {
-    //     height: 22px;
-    //     margin-left: 0; 
-    // }
+    @include tablet {
+        height: 22px;
+        margin-left: 0; 
     }
+}
 
     &__block {
+        @include tablet {
             margin-top: -2.8rem;
+        }
     }
 
     &__logo {
     display: none;   
 
-    // @mixin tablet {
-    //     margin-left: 80vw;
-    //     height: 20px;
-    //     display: inline-block;
-    // }
+
+    @include tablet {
+        margin-left: 80vw;
+        height: 20px;
+        display: inline-block;
+    }
     }
 
     &__contact {
+
+        @include tablet {
             display: inline-block;
             margin-top: 2.5rem;
             margin-left: -1vw; 
+        }
     }
 
     &__contact-name {
     color: $font-color;
-    font-family: "Avenir";
     font-size: $footer-font-size;
     margin-left: 5vw;
     line-height: 1.3rem; 
 
-    // @mixin tablet {
-    //     font-size: 16px;
-    //     line-height: 1.5rem; 
-    // }
+    @include tablet {
+        font-size: 16px;
+        line-height: 1.5rem; 
+    }
     }
 
     &__contact-address {
-    font-family: "Avenir";
     font-size: $footer-font-size;
     color: $font-color;
     margin-left: 5vw;
     line-height: 1.3rem;
 
-    // @mixin tablet {
-    //     font-size: 14px;
-    //     line-height: 1.5rem; 
-    // }
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.5rem; 
+    }
     }
 
     &__contact-email {
-    font-family: "Avenir";
     font-size: $footer-font-size;
     color: $font-color;
     margin-left: 5vw;
@@ -687,10 +694,11 @@ label {
     line-height: 1.3rem; 
 
 
-    // @mixin tablet {
-    //     font-size: 14px;
-    //     line-height: 1.5rem;
-    // }
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.5rem; 
+    }
+
     }
 
     &__contact-link {
@@ -698,7 +706,7 @@ label {
     }
 
     &__copyright {
-    font-family: "Avenir";
+
     font-size: $footer-font-size;
     color: $font-color;
     margin-left: 5vw;
@@ -714,276 +722,13 @@ label {
         width: 55%;
     }
 
-    // @mixin tablet {
-    //     visibility: visible;
-    //     margin-left: 3.6vw;
-    //     font-size: 14px;
-    // }
-    }
-}
-
-// media query tablet 768px
-
-@media only screen and (min-width: 768px) {
-
-    .header__nav-logo {
-        margin-left: 4%;
-        padding-top: 4%;
-        
-    }
-
-    .header__nav-list {
-        padding-left: 0;
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 1vw;
-    }
-
-    .nav__list-item {
-        padding-bottom: 0;
-        margin-top: -2%;
-        width: 18%;
-        
-    }
-
-    .nav__link {
-        padding: 0;
-        font-size: 14px;
-    
-    }
-
-    .nav__list-item {
-        margin-right: 9vw;
-        padding-left: 1vw;
-    }
-
-    .nav__list-item--active {
-        color: $font-color;
-        border-bottom: 5.6px solid $font-color;
-        padding-bottom: 1.2rem;
-        width: 10%;
-        font-weight: bold;
-    }
-
-
-    .hero__overlay:after {
-        height: 400px;
-        max-height: 800px;
-    }
-    
-    .hero__image {
-        height: 400px;
-        max-height: 800px;
-    }
-    
-    .hero__header {
-        position: absolute;
-        top: 15%;
-        left: 4%;
-        font-size: 60px;
-        line-height: 5rem;
-    }
-
-    .about__header {
-        font-size: 35.5px;
-        margin: 2.5rem 5vw 2rem 4vw;
-    }
-
-    .about__image {
-        width: 92vw;
-        margin-left: 4vw;
-    }
-
-    .about__quote-text {
-        font-family: 'Avenir Next';
-        font-size: 23.5px;
-        line-height: 6vh;
-        margin: 2.5rem 7vw 1rem 4vw;
-    }
-
-    .about__quote-author {
-        font-size: 20px;
-        margin: 2rem 5vw 2.5rem 3.5vw;
-    }
-
-    .about__autobiography-names {
-        font-family: 'Avenir Next';
-        font-size: 25px;
-        margin: 3rem 5vw 0vh 3.5vw;
-    }
-
-    .about__box {
-        display: flex;
-        justify-content: center;
-    }
-
-    .about__paragraph-first, 
-    .about__paragraph-second {
-        display: flex;
-        font-size: 14.2px;
-        line-height: 1.5rem;
-        margin-left: 3.5vw;
-        margin-right: 2.5vw;
-        margin-top: 1rem;
-    }
-
-    .gallery__header {
-        font-size: 35px;
-        padding-top: 2.5rem;
-        margin-bottom: 3rem;
-        margin-left: 3.5vw;
-    }
-
-    .gallery__layout {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-
-    .gallery__image {
-        display: flex;
-        width: 29vw;
-        margin-bottom: 3vh;
-        margin: 0 auto;
-        margin-bottom: 4vh;
-    }
-
-    .comments__header {
-        font-size: 35px;
-    }
-
-    .comments__image {
-        margin-left: 15vw;
-    }
-
-    form {
-        margin-left: 25vw;
-    }
-
-    
-    #name {
-        height: 45px;
-        width: 430px;
-    }
-    
-    #comment {
-        height: 110px;
-        width: 430px;
-        margin-top: 0.2rem;
-        margin-bottom: 4rem;
-    }
-    
-    #submit {
-        height: 50px;
-        width: 209px;
-        margin-top: 5rem;
-        margin-bottom: 1.5rem;
-        margin-left: -28vw;
-    }
-    
-    ::placeholder {
-        font-size: 18px;
-        padding-left: 2vw;
-        padding-top: 0.8rem;
-    }
-
-    .comments__underline {
-        margin: -1rem 5vw 0.7rem 14vw;
-        width: 67%;
-    }
-    
-    .comments__circle {
-        margin: 0.5rem 0vw 0vh 14vw;
-    
-    }
-    
-    .comments__username {
-        font-size: 16px;
-        margin-left: 23vw;
-        margin-top: -3rem;
-    }
-    .comments__date{
-        font-size: 16px;
-        margin-left: 42vw;
-        margin-right: 5vw;
-        margin-top: -3rem;
-    }
-    .comments__post {
-        font-size: 14px;
-        margin-right:18vw;
-        margin-left: 23vw;
-    
-    }
-
-    .footer {
-        height: 68%;
-        margin-top: 2%;
-    }
-
-    .footer__header {
-        padding-top: 1rem;
-        margin-bottom: 0;
-        margin-right: 0;
-        width: 300px;
-        margin-left: 3.5vw;
-        font-size: 38px;
-    }
-
-    .footer__container {
-        display: inline-block;
-    }
-
-    .footer__social {
-        margin-left: 40vw;
-        margin-top: -2.3rem;
-        width: 400px;
-    }
-
-    .footer__image {
-        height: 22px;
-        margin-left: 0;
-    }
-
-    .footer__block {
-        margin-top: -2.8rem;
-    }
-
-    .footer__logo {
-        margin-left: 80vw;
-        height: 20px;
-        display: inline-block;
-    }
-
-    .footer__contact {
-        display: inline-block;
-        margin-top: 2.5rem;
-        margin-left: -1vw;
-    }
-
-    .footer__contact-name {
-        font-size: 16px;
-        line-height: 1.5rem;
-    }
-
-    .footer__contact-address {
-        font-size: 14px;
-        line-height: 1.5rem;
-    }
-
-    .footer__contact-email {
-        font-size: 14px;
-        line-height: 1.5rem;
-    }
-
-    .footer__copyright {
+    @include tablet {
         visibility: visible;
         margin-left: 3.6vw;
         font-size: 14px;
     }
+
+  }
 }
 
 // media query desktop 1024px
@@ -1411,155 +1156,5 @@ label {
             margin-left: 12.5vw;
             font-size: 13px;
     
-        }
-
-    
-    }
-
-// media query desktop 1440px
-
-@media only screen and (min-width: 1440px) {
-        .header__nav-logo {
-            padding-top: 2%;
-            margin-left: 12.5vw;    
-        }
-    
-        .header__nav-list {
-            display: flex;
-            justify-content: center;
-            margin-left: -10vw;
-            margin-top: 0.65rem;
-        }
-    
-        .nav__list-item {
-            width: 9.5%;
-        }
-    
-        
-        .nav__list-item--active {
-            color: $font-color;
-            border-bottom: 5.6px solid $font-color;
-            padding-bottom: 1.5rem;
-            width: 5.8%;
-            font-weight: bold;
-            margin-right: 4vw;
-        }
-
-        .hero__header {
-            top: 24%;
-            left: 12%;
-            font-size: 55px;
-            line-height: 4.5rem;
-        }
-
-        .about__header {
-            margin-bottom: 5vh;
-        }
-
-        .about__quote-text {
-            margin-left:20vw;
-            font-size: 24px;
-            margin-right: 25vw;
-        }
-
-        .about__quote-author {
-            font-size: 15px;
-        }
-    
-        .about__paragraph-first, 
-        .about__paragraph-second {
-            font-size: 13px;
-            line-height: 3.2vh;
-        }
-
-        .about__box {
-            margin-right: 18vw;
-        }
-        
-        .gallery__layout {
-            margin-left: 11.8vw;
-        }
-
-        .gallery__image {
-            margin-bottom: 4vh;
-        }
-        
-        .comments__image {
-            margin: 8vh 0vw 2vh 32.2vw;
-    }   
-        .comments__header {
-            font-size: 37.5px;
-        }
-    
-        form {
-            margin-left: 37vw;
-        }
-        
-        #name,
-        #comment {
-            width: 420px;
-        }
-        
-        #submit {
-            margin-left: -12.5vw;
-        }
-
-        .comments__underline {
-            margin: 1.5vh 5vw 2vh 27vw;
-            width: 40%;
-        }
-        
-        .comments__circle {
-            margin:2vh 0vw 0vh 27vw;
-        
-        }
-
-        .comments__date {
-            margin-left: 40vw;
-        }
-        
-        .comments__post {
-            font-size: 14px;
-            margin-right:35vw;
-            margin-left: 31.5vw;
-        
-        }
-        
-        .footer__social {
-            margin-left: 35vw;
-            margin-top: -1.8rem;
-            width: 400px;
-        }
-        .footer {
-            height: 53%;
-            max-height: 400px;
-            margin-top: 2vh;
-        }
-        .footer__image {
-            margin-left: -2.5vw;
-        }
-    
-        .footer__logo {
-            margin-left: 81.5vw;
-        }
-
-        .footer__contact-name {
-            font-size: 14px;
-            margin-bottom: 2vh;
-        }
-
-        .footer__contact-address {
-            font-size: 13px;
-
-        }
-
-        .footer__contact-email {
-            font-size: 13px;
-            margin-top: -0.5vw;
-            margin-bottom: -0.5vh;
-        }
-
-        .footer__copyright {
-            font-size: 14px;
         }
     }

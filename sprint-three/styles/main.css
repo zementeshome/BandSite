@@ -22,6 +22,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  font-family: "Avenir";
 }
 
 .header__nav {
@@ -36,6 +37,12 @@ html, body {
   display: flex;
   margin: 0 auto;
   padding-top: 5%;
+}
+@media only screen and (min-width: 768px) {
+  .header__nav-logo {
+    margin-left: 4%;
+    padding-top: 4%;
+  }
 }
 .header__nav-list {
   display: -webkit-box;
@@ -58,11 +65,28 @@ html, body {
     margin-top: 0.5rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header__nav-list {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1vw;
+  }
+}
 
 .nav__list-item {
   padding-bottom: 1.3rem;
   height: 1.3rem;
   width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .nav__list-item {
+    padding-bottom: 0;
+    margin-top: -2%;
+    width: 18%;
+    margin-right: 9vw;
+    padding-left: 1vw;
+  }
 }
 
 .nav__list-item--active {
@@ -78,13 +102,18 @@ html, body {
     width: 100%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .nav__list-item--active {
+    padding-bottom: 1.2rem;
+    width: 10%;
+  }
+}
 
 .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 18vw 2rem 15vw;
-  font-family: "Avenir";
   font-size: 14px;
   color: #E1E1E1;
 }
@@ -96,6 +125,12 @@ html, body {
 @media only screen and (min-width: 425px) {
   .nav__link {
     padding: 0 11vw 1.5rem 17vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav__link {
+    padding: 0;
+    font-size: 14px;
   }
 }
 
@@ -125,11 +160,23 @@ html, body {
   -webkit-filter: opacity(50%);
           filter: opacity(50%);
 }
+@media only screen and (min-width: 768px) {
+  .hero__overlay:after {
+    height: 400px;
+    max-height: 800px;
+  }
+}
 .hero__image {
   width: 100%;
   height: 267px;
   max-height: 183px;
   margin-top: 0;
+}
+@media only screen and (min-width: 768px) {
+  .hero__image {
+    height: 400px;
+    max-height: 800px;
+  }
 }
 .hero__header {
   position: absolute;
@@ -148,6 +195,15 @@ html, body {
     line-height: 2.4rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .hero__header {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    font-size: 60px;
+    line-height: 5rem;
+  }
+}
 
 .about__header {
   color: #323232;
@@ -155,47 +211,90 @@ html, body {
   font-size: 24px;
   margin: 1.5rem 5vw 1rem 5vw;
 }
+@media only screen and (min-width: 768px) {
+  .about__header {
+    font-size: 35.5px;
+    margin: 2.5rem 5vw 2rem 4vw;
+  }
+}
 .about__image {
   width: 90vw;
   margin-left: 5vw;
   margin-right: 5vw;
 }
+@media only screen and (min-width: 768px) {
+  .about__image {
+    width: 92vw;
+    margin-left: 4vw;
+  }
+}
 .about__quote-text {
   color: #323232;
-  font-family: "Avenir";
+  font-family: "Avenir Next";
   font-weight: bold;
   font-size: 16px;
   line-height: 3.5vh;
   margin: 1.5rem 5vw 1rem 5vw;
 }
+@media only screen and (min-width: 768px) {
+  .about__quote-text {
+    font-size: 23.5px;
+    line-height: 6vh;
+    margin: 2.5rem 7vw 1rem 4vw;
+  }
+}
 .about__quote-author {
   color: #323232;
-  font-family: "Avenir";
   font-weight: bold;
   font-size: 14.5px;
   margin: 1.5rem 5vw 2rem 5vw;
 }
+@media only screen and (min-width: 768px) {
+  .about__quote-author {
+    font-size: 20px;
+    margin: 2rem 5vw 2.5rem 3.5vw;
+  }
+}
 .about__autobiography-names {
+  font-family: "Avenir Next";
   color: #323232;
-  font-family: "Avenir";
   font-weight: bold;
   font-size: 16px;
   margin: 1.5rem 5vw 0.5rem 5vw;
 }
-.about__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media only screen and (min-width: 768px) {
+  .about__autobiography-names {
+    font-size: 25px;
+    margin: 3rem 5vw 0vh 3.5vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .about__paragraph-first, .about__paragraph-second {
   color: #323232;
-  font-family: "Avenir";
   font-size: 12.2px;
   margin: 0.7rem 5vw 1rem 5vw;
   line-height: 1.3rem;
+}
+@media only screen and (min-width: 768px) {
+  .about__paragraph-first, .about__paragraph-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14.2px;
+    line-height: 1.5rem;
+    margin-left: 3.5vw;
+    margin-right: 2.5vw;
+    margin-top: 1rem;
+  }
 }
 
 .gallery {
@@ -209,21 +308,31 @@ html, body {
   margin: 8vh 5vw 3vh 5vw;
   padding-top: 4vh;
 }
-.gallery__layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: 2vw;
-  margin-right: 2vw;
+@media only screen and (min-width: 768px) {
+  .gallery__header {
+    font-size: 35px;
+    padding-top: 2.5rem;
+    margin-bottom: 3rem;
+    margin-left: 3.5vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery__layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
 }
 .gallery__image {
   display: -webkit-box;
@@ -239,6 +348,14 @@ html, body {
   margin-right: 5vw;
   filter: gray;
   -webkit-filter: grayscale(100%);
+}
+@media only screen and (min-width: 768px) {
+  .gallery__image {
+    width: 29vw;
+    margin-bottom: 3vh;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+  }
 }
 .gallery__image:hover {
   filter: none;
@@ -262,11 +379,21 @@ html, body {
     font-size: 32px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .comments__header {
+    font-size: 35px;
+  }
+}
 .comments__image {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin: 1rem 0vw 0rem 5vw;
+}
+@media only screen and (min-width: 768px) {
+  .comments__image {
+    margin-left: 15vw;
+  }
 }
 
 form {
@@ -283,9 +410,13 @@ form {
     margin-left: 23vw;
   }
 }
+@media only screen and (min-width: 768px) {
+  form {
+    margin-left: 25vw;
+  }
+}
 
 label {
-  font-family: "Avenir";
   font-size: 16px;
   color: #AFAFAF;
   font-weight: bold;
@@ -312,6 +443,12 @@ label {
     height: 50px;
   }
 }
+@media only screen and (min-width: 768px) {
+  #name {
+    height: 45px;
+    width: 430px;
+  }
+}
 
 #comment {
   height: 90px;
@@ -333,6 +470,14 @@ label {
     height: 120px;
   }
 }
+@media only screen and (min-width: 768px) {
+  #comment {
+    height: 110px;
+    width: 430px;
+    margin-top: 0.2rem;
+    margin-bottom: 4rem;
+  }
+}
 
 #submit {
   height: 50px;
@@ -342,11 +487,11 @@ label {
   border: 2px solid #323232;
   background-color: #323232;
   color: #ffffff;
-  font-family: "Avenir";
   font-weight: bold;
   font-size: 15px;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  font-family: "Avenir";
 }
 @media only screen and (min-width: 375px) {
   #submit {
@@ -359,45 +504,54 @@ label {
     height: 50px;
   }
 }
+@media only screen and (min-width: 768px) {
+  #submit {
+    height: 50px;
+    width: 209px;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-left: -28vw;
+  }
+}
 
 ::-webkit-input-placeholder {
-  font-family: "Avenir";
   font-size: 15px;
   color: #323232;
   padding-left: 3vw;
   padding-top: 0.5rem;
+  font-family: "Avenir";
 }
 
 ::-moz-placeholder {
-  font-family: "Avenir";
   font-size: 15px;
   color: #323232;
   padding-left: 3vw;
   padding-top: 0.5rem;
+  font-family: "Avenir";
 }
 
 :-ms-input-placeholder {
-  font-family: "Avenir";
   font-size: 15px;
   color: #323232;
   padding-left: 3vw;
   padding-top: 0.5rem;
+  font-family: "Avenir";
 }
 
 ::-ms-input-placeholder {
-  font-family: "Avenir";
   font-size: 15px;
   color: #323232;
   padding-left: 3vw;
   padding-top: 0.5rem;
+  font-family: "Avenir";
 }
 
 ::placeholder {
-  font-family: "Avenir";
   font-size: 15px;
   color: #323232;
   padding-left: 3vw;
   padding-top: 0.5rem;
+  font-family: "Avenir";
 }
 @media only screen and (min-width: 375px) {
   ::-webkit-input-placeholder {
@@ -431,6 +585,33 @@ label {
   }
   ::placeholder {
     font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  ::-webkit-input-placeholder {
+    font-size: 18px;
+    padding-left: 2vw;
+    padding-top: 0.8rem;
+  }
+  ::-moz-placeholder {
+    font-size: 18px;
+    padding-left: 2vw;
+    padding-top: 0.8rem;
+  }
+  :-ms-input-placeholder {
+    font-size: 18px;
+    padding-left: 2vw;
+    padding-top: 0.8rem;
+  }
+  ::-ms-input-placeholder {
+    font-size: 18px;
+    padding-left: 2vw;
+    padding-top: 0.8rem;
+  }
+  ::placeholder {
+    font-size: 18px;
+    padding-left: 2vw;
+    padding-top: 0.8rem;
   }
 }
 
@@ -444,6 +625,12 @@ label {
   margin: 0.5rem 5vw 0.5rem 5vw;
   width: 90%;
 }
+@media only screen and (min-width: 768px) {
+  .comments__underline {
+    margin: -1rem 5vw 0.7rem 14vw;
+    width: 67%;
+  }
+}
 
 .comments__circle {
   height: 50px;
@@ -452,9 +639,13 @@ label {
   background-color: #E1E1E1;
   margin: 0.8rem 0vw 0vh 5vw;
 }
+@media only screen and (min-width: 768px) {
+  .comments__circle {
+    margin: 0.5rem 0vw 0vh 14vw;
+  }
+}
 
 .comments__username {
-  font-family: "Avenir";
   font-weight: bold;
   color: #323232;
   font-size: 14px;
@@ -467,9 +658,15 @@ label {
     margin-top: -3rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .comments__username {
+    font-size: 16px;
+    margin-left: 23vw;
+    margin-top: -3rem;
+  }
+}
 
 .comments__date {
-  font-family: "Avenir";
   color: #AFAFAF;
   font-size: 14px;
   margin-left: 75vw;
@@ -481,9 +678,16 @@ label {
     margin-left: 80vw;
   }
 }
+@media only screen and (min-width: 768px) {
+  .comments__date {
+    font-size: 16px;
+    margin-left: 42vw;
+    margin-right: 5vw;
+    margin-top: -3rem;
+  }
+}
 
 .comments__post {
-  font-family: "Avenir";
   color: #323232;
   font-size: 13px;
   margin-right: 8vw;
@@ -494,11 +698,24 @@ label {
     margin-left: 22vw;
   }
 }
+@media only screen and (min-width: 768px) {
+  .comments__post {
+    font-size: 14px;
+    margin-right: 18vw;
+    margin-left: 23vw;
+  }
+}
 
 .footer {
   background-color: #323232;
-  height: 135%;
+  height: 130%;
   margin-top: 7%;
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    height: 68%;
+    margin-top: 2%;
+  }
 }
 .footer__header {
   font-size: 40px;
@@ -508,13 +725,27 @@ label {
   margin-right: 5vw;
   padding-top: 3.2rem;
 }
-.footer__container {
-  display: inline-block;
+@media only screen and (min-width: 768px) {
+  .footer__header {
+    padding-top: 1rem;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 300px;
+    margin-left: 3.5vw;
+    font-size: 38px;
+  }
 }
-.footer__social {
-  margin-left: 40vw;
-  margin-top: -2.3rem;
-  width: 400px;
+@media only screen and (min-width: 768px) {
+  .footer__container {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__social {
+    margin-left: 40vw;
+    margin-top: -2.3rem;
+    width: 400px;
+  }
 }
 .footer__image {
   margin-left: 5vw;
@@ -522,44 +753,75 @@ label {
   padding-right: 5vw;
   padding-bottom: 1rem;
 }
-.footer__block {
-  margin-top: -2.8rem;
+@media only screen and (min-width: 768px) {
+  .footer__image {
+    height: 22px;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__block {
+    margin-top: -2.8rem;
+  }
 }
 .footer__logo {
   display: none;
 }
-.footer__contact {
-  display: inline-block;
-  margin-top: 2.5rem;
-  margin-left: -1vw;
+@media only screen and (min-width: 768px) {
+  .footer__logo {
+    margin-left: 80vw;
+    height: 20px;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__contact {
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-left: -1vw;
+  }
 }
 .footer__contact-name {
   color: #ffffff;
-  font-family: "Avenir";
   font-size: 14px;
   margin-left: 5vw;
   line-height: 1.3rem;
 }
+@media only screen and (min-width: 768px) {
+  .footer__contact-name {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+}
 .footer__contact-address {
-  font-family: "Avenir";
   font-size: 14px;
   color: #ffffff;
   margin-left: 5vw;
   line-height: 1.3rem;
 }
+@media only screen and (min-width: 768px) {
+  .footer__contact-address {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
 .footer__contact-email {
-  font-family: "Avenir";
   font-size: 14px;
   color: #ffffff;
   margin-left: 5vw;
   padding-top: 0.5rem;
   line-height: 1.3rem;
 }
+@media only screen and (min-width: 768px) {
+  .footer__contact-email {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
 .footer__contact-link {
   text-decoration: none;
 }
 .footer__copyright {
-  font-family: "Avenir";
   font-size: 14px;
   color: #ffffff;
   margin-left: 5vw;
@@ -577,302 +839,14 @@ label {
     width: 55%;
   }
 }
-
 @media only screen and (min-width: 768px) {
-  .header__nav-logo {
-    margin-left: 4%;
-    padding-top: 4%;
-  }
-
-  .header__nav-list {
-    padding-left: 0;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 1vw;
-  }
-
-  .nav__list-item {
-    padding-bottom: 0;
-    margin-top: -2%;
-    width: 18%;
-  }
-
-  .nav__link {
-    padding: 0;
-    font-size: 14px;
-  }
-
-  .nav__list-item {
-    margin-right: 9vw;
-    padding-left: 1vw;
-  }
-
-  .nav__list-item--active {
-    color: #ffffff;
-    border-bottom: 5.6px solid #ffffff;
-    padding-bottom: 1.2rem;
-    width: 10%;
-    font-weight: bold;
-  }
-
-  .hero__overlay:after {
-    height: 400px;
-    max-height: 800px;
-  }
-
-  .hero__image {
-    height: 400px;
-    max-height: 800px;
-  }
-
-  .hero__header {
-    position: absolute;
-    top: 15%;
-    left: 4%;
-    font-size: 60px;
-    line-height: 5rem;
-  }
-
-  .about__header {
-    font-size: 35.5px;
-    margin: 2.5rem 5vw 2rem 4vw;
-  }
-
-  .about__image {
-    width: 92vw;
-    margin-left: 4vw;
-  }
-
-  .about__quote-text {
-    font-family: "Avenir Next";
-    font-size: 23.5px;
-    line-height: 6vh;
-    margin: 2.5rem 7vw 1rem 4vw;
-  }
-
-  .about__quote-author {
-    font-size: 20px;
-    margin: 2rem 5vw 2.5rem 3.5vw;
-  }
-
-  .about__autobiography-names {
-    font-family: "Avenir Next";
-    font-size: 25px;
-    margin: 3rem 5vw 0vh 3.5vw;
-  }
-
-  .about__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .about__paragraph-first,
-.about__paragraph-second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 14.2px;
-    line-height: 1.5rem;
-    margin-left: 3.5vw;
-    margin-right: 2.5vw;
-    margin-top: 1rem;
-  }
-
-  .gallery__header {
-    font-size: 35px;
-    padding-top: 2.5rem;
-    margin-bottom: 3rem;
-    margin-left: 3.5vw;
-  }
-
-  .gallery__layout {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: 2vw;
-    margin-right: 2vw;
-  }
-
-  .gallery__image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 29vw;
-    margin-bottom: 3vh;
-    margin: 0 auto;
-    margin-bottom: 4vh;
-  }
-
-  .comments__header {
-    font-size: 35px;
-  }
-
-  .comments__image {
-    margin-left: 15vw;
-  }
-
-  form {
-    margin-left: 25vw;
-  }
-
-  #name {
-    height: 45px;
-    width: 430px;
-  }
-
-  #comment {
-    height: 110px;
-    width: 430px;
-    margin-top: 0.2rem;
-    margin-bottom: 4rem;
-  }
-
-  #submit {
-    height: 50px;
-    width: 209px;
-    margin-top: 5rem;
-    margin-bottom: 1.5rem;
-    margin-left: -28vw;
-  }
-
-  ::-webkit-input-placeholder {
-    font-size: 18px;
-    padding-left: 2vw;
-    padding-top: 0.8rem;
-  }
-
-  ::-moz-placeholder {
-    font-size: 18px;
-    padding-left: 2vw;
-    padding-top: 0.8rem;
-  }
-
-  :-ms-input-placeholder {
-    font-size: 18px;
-    padding-left: 2vw;
-    padding-top: 0.8rem;
-  }
-
-  ::-ms-input-placeholder {
-    font-size: 18px;
-    padding-left: 2vw;
-    padding-top: 0.8rem;
-  }
-
-  ::placeholder {
-    font-size: 18px;
-    padding-left: 2vw;
-    padding-top: 0.8rem;
-  }
-
-  .comments__underline {
-    margin: -1rem 5vw 0.7rem 14vw;
-    width: 67%;
-  }
-
-  .comments__circle {
-    margin: 0.5rem 0vw 0vh 14vw;
-  }
-
-  .comments__username {
-    font-size: 16px;
-    margin-left: 23vw;
-    margin-top: -3rem;
-  }
-
-  .comments__date {
-    font-size: 16px;
-    margin-left: 42vw;
-    margin-right: 5vw;
-    margin-top: -3rem;
-  }
-
-  .comments__post {
-    font-size: 14px;
-    margin-right: 18vw;
-    margin-left: 23vw;
-  }
-
-  .footer {
-    height: 68%;
-    margin-top: 2%;
-  }
-
-  .footer__header {
-    padding-top: 1rem;
-    margin-bottom: 0;
-    margin-right: 0;
-    width: 300px;
-    margin-left: 3.5vw;
-    font-size: 38px;
-  }
-
-  .footer__container {
-    display: inline-block;
-  }
-
-  .footer__social {
-    margin-left: 40vw;
-    margin-top: -2.3rem;
-    width: 400px;
-  }
-
-  .footer__image {
-    height: 22px;
-    margin-left: 0;
-  }
-
-  .footer__block {
-    margin-top: -2.8rem;
-  }
-
-  .footer__logo {
-    margin-left: 80vw;
-    height: 20px;
-    display: inline-block;
-  }
-
-  .footer__contact {
-    display: inline-block;
-    margin-top: 2.5rem;
-    margin-left: -1vw;
-  }
-
-  .footer__contact-name {
-    font-size: 16px;
-    line-height: 1.5rem;
-  }
-
-  .footer__contact-address {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
-
-  .footer__contact-email {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
-
   .footer__copyright {
     visibility: visible;
     margin-left: 3.6vw;
     font-size: 14px;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .header__nav-logo {
     padding-top: 3%;
@@ -1325,154 +1299,6 @@ label {
   .footer__copyright {
     margin-left: 12.5vw;
     font-size: 13px;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .header__nav-logo {
-    padding-top: 2%;
-    margin-left: 12.5vw;
-  }
-
-  .header__nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: -10vw;
-    margin-top: 0.65rem;
-  }
-
-  .nav__list-item {
-    width: 9.5%;
-  }
-
-  .nav__list-item--active {
-    color: #ffffff;
-    border-bottom: 5.6px solid #ffffff;
-    padding-bottom: 1.5rem;
-    width: 5.8%;
-    font-weight: bold;
-    margin-right: 4vw;
-  }
-
-  .hero__header {
-    top: 24%;
-    left: 12%;
-    font-size: 55px;
-    line-height: 4.5rem;
-  }
-
-  .about__header {
-    margin-bottom: 5vh;
-  }
-
-  .about__quote-text {
-    margin-left: 20vw;
-    font-size: 24px;
-    margin-right: 25vw;
-  }
-
-  .about__quote-author {
-    font-size: 15px;
-  }
-
-  .about__paragraph-first,
-.about__paragraph-second {
-    font-size: 13px;
-    line-height: 3.2vh;
-  }
-
-  .about__box {
-    margin-right: 18vw;
-  }
-
-  .gallery__layout {
-    margin-left: 11.8vw;
-  }
-
-  .gallery__image {
-    margin-bottom: 4vh;
-  }
-
-  .comments__image {
-    margin: 8vh 0vw 2vh 32.2vw;
-  }
-
-  .comments__header {
-    font-size: 37.5px;
-  }
-
-  form {
-    margin-left: 37vw;
-  }
-
-  #name,
-#comment {
-    width: 420px;
-  }
-
-  #submit {
-    margin-left: -12.5vw;
-  }
-
-  .comments__underline {
-    margin: 1.5vh 5vw 2vh 27vw;
-    width: 40%;
-  }
-
-  .comments__circle {
-    margin: 2vh 0vw 0vh 27vw;
-  }
-
-  .comments__date {
-    margin-left: 40vw;
-  }
-
-  .comments__post {
-    font-size: 14px;
-    margin-right: 35vw;
-    margin-left: 31.5vw;
-  }
-
-  .footer__social {
-    margin-left: 35vw;
-    margin-top: -1.8rem;
-    width: 400px;
-  }
-
-  .footer {
-    height: 53%;
-    max-height: 400px;
-    margin-top: 2vh;
-  }
-
-  .footer__image {
-    margin-left: -2.5vw;
-  }
-
-  .footer__logo {
-    margin-left: 81.5vw;
-  }
-
-  .footer__contact-name {
-    font-size: 14px;
-    margin-bottom: 2vh;
-  }
-
-  .footer__contact-address {
-    font-size: 13px;
-  }
-
-  .footer__contact-email {
-    font-size: 13px;
-    margin-top: -0.5vw;
-    margin-bottom: -0.5vh;
-  }
-
-  .footer__copyright {
-    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
